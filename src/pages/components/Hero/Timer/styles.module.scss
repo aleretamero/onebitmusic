@@ -2,15 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   width: 100%;
   max-width: 83.125rem;
   text-align: center;
   font-size: 9rem;
   font-weight: 900;
   opacity: 0.5;
+  user-select: none;
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
+
+  & span {
+    flex: 1;
+  }
 }
 
 @media (max-width: 78rem) {

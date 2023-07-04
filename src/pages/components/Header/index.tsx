@@ -1,13 +1,12 @@
 import styles from './styles.module.scss';
 
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-import onebitmusic from '../../../../public/onebitcode.svg';
-import logo from '../../../../public/logo.svg';
 import Link from 'next/link';
 
 import { useMedia } from '@/hooks/useMedia';
+import { Logo } from '../Logo';
+import { Button } from '../Button';
 
 export const Header = () => {
   const [isScrollAtTop, setIsScrollAtTop] = useState(true);
@@ -39,10 +38,7 @@ export const Header = () => {
         backgroundColor: isScrollAtTop ? 'transparent' : 'rgba(0, 0, 0, 0.9)',
       }}
     >
-      <div className={styles.logo}>
-        <Image src={onebitmusic} alt="onebitmusic" width={137} height={19.13} />
-        <Image src={logo} alt="logo" width={16.455} height={20.188} />
-      </div>
+      <Logo />
 
       {mobile && (
         <button
@@ -55,7 +51,11 @@ export const Header = () => {
       )}
 
       {mobileMenu && (
-        <nav className={`${styles.nav} ${mobileMenu && mobile ? styles.active : ''}`}>
+        <nav
+          className={`${styles.nav} ${
+            mobileMenu && mobile ? styles.active : ''
+          }`}
+        >
           <Link href="" className={styles.link}>
             INICIO
           </Link>
@@ -68,9 +68,7 @@ export const Header = () => {
           <Link href="" className={styles.link}>
             CONTATO
           </Link>
-          <Link href="" className="button light">
-            COMPRAR INGRESSOS
-          </Link>
+          <Button color='light'>COMPRAR INGRESSOS</Button>
         </nav>
       )}
     </header>
