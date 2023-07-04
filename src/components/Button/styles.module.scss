@@ -12,8 +12,23 @@
     background-color: var(--gray-100);
   }
 
+  &.lightOutlineDark {
+    color: var(--gray-800);
+    background-color: var(--gray-100);
+    border-radius: 0.3125rem;
+    border: 1px solid var(--gray-800);
+  }
+
+  &.lightOutlineRed {
+    color: var(--red-600);
+    background-color: var(--gray-100);
+    border-radius: 0.3125rem;
+    border: 1px solid var(--red-600);
+  }
+
   &.dark {
     color: var(--gray-100);
+    border-radius: 0.3125rem;
     background-color: var(--gray-800);
   }
 
@@ -28,6 +43,6 @@
   }
 
   &:hover svg {
-    transform: translateX(.3rem);
+    transform: translateX(0.3rem);
   }
 }

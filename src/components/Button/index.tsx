@@ -6,7 +6,7 @@ import { HiArrowRight } from 'react-icons/hi';
 
 interface BottonProps extends ComponentPropsWithRef<'button'> {
   children: ReactNode;
-  color: 'light' | 'dark' | 'red';
+  color: 'light' | 'dark' | 'red' | 'lightOutlineRed' | 'lightOutlineDark';
   arrow?: boolean;
 }
 

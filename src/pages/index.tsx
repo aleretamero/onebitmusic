@@ -1,15 +1,15 @@
 import Head from 'next/head';
 
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Artists } from './components/Artists';
-import { Programming } from './components/Programming';
-import { TypeOfTicket } from './components/TypeOfTicket';
-import { OurInvestors } from './components/OurInvestors';
-import { Gallery } from './components/Gallery';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
+import { About } from '../components/About';
+import { Artists } from '../components/Artists';
+import { Programming } from '../components/Programming';
+import { Pricing } from '../components/Pricing';
+import { Sponsors } from '../components/Sponsors';
+import { Gallery } from '../components/Gallery';
+import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
   return (
@@ -25,11 +25,11 @@ export default function Home() {
         <Hero />
         <About />
         <Artists />
-        <Programming />
-        <TypeOfTicket />
-        <OurInvestors />
-        <Gallery />
-        <Contact />
+        {/* <Programming /> */}
+        <Pricing />
+        <Sponsors />
+        {/* <Gallery /> */}
+        {/* <Contact /> */}
         <Footer />
       </main>
     </>
