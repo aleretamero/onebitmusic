@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  & a {
+    text-transform: uppercase;
+  }
+
+  & a:last-child {
+    margin-left: 0.625rem;
+  }
+}
+
+.link {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
