@@ -1,0 +1,50 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 83.125rem;
+  text-align: center;
+  font-size: 9rem;
+  font-weight: 900;
+  opacity: 0.5;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+@media (max-width: 78rem) {
+  .timer {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  .timer {
+    font-size: 6.5rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .timer {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .timer {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 32rem) {
+  .timer {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 28rem) {
+  .timer {
+    font-size: 3rem;
+  }
+}

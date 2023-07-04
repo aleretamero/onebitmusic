@@ -76,6 +76,14 @@ footer {
   padding: 2rem max(calc((100% - 73.125rem) / 2), 2rem);
 }
 
+@media (max-width: 26.5625rem) {
+  header,
+  section,
+  footer {
+    padding: 2rem max(calc((100% - 73.125rem) / 2), 1rem);
+  }
+}
+
 .button {
   display: flex;
   justify-content: center;

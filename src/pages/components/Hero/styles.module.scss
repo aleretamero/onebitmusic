@@ -1,13 +1,12 @@
 .container {
   width: 100%;
-  height: 100vh;
-  background-image: url('../../../../public/assets/images/Hero.svg');
+  min-height: 100vh;
+  background: url('../../../assets/Hero.svg') center no-repeat;
   background-size: cover;
-  padding-top: 11.6875rem;
-
+  padding-top: 10rem;
   display: flex;
   justify-content: center;
-  gap: 5.25rem;
+  gap: 5rem;
   align-items: center;
   flex-direction: column;
 }
@@ -50,11 +49,13 @@
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  flex-wrap: wrap;
 
   & a:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.125rem;
 
     & span {
       display: flex;
@@ -65,13 +66,38 @@
   }
 }
 
-.timer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 83.125rem;
-  text-align: center;
-  font-size: 9rem;
-  font-weight: 900;
+@media (max-width: 64rem) {
+  .container {
+    gap: 3rem;
+    padding-top: 6rem;
+  }
+  .content {
+    max-width: none;
+    gap: 2rem;
+
+    & strong,
+    h1 {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+
+    & p {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 54rem) {
+  .content {
+    & strong,
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
 }

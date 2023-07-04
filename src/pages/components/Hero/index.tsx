@@ -3,7 +3,8 @@ import styles from './styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import play from '../../../../public/assets/images/Play.svg';
+import play from '@/assets/Play.svg';
+import { Timer } from './Timer';
 
 export const Hero = () => {
   return (
@@ -27,9 +28,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.timer}>
-        <span>5d</span> <span>2h</span> <span>26m</span> <span>12s</span>
-      </div>
+      <Timer />
     </section>
   );
 };
