@@ -2,31 +2,32 @@ import styles from './styles.module.scss';
 
 import Image from 'next/image';
 
-import { AiFillHeart } from 'react-icons/ai';
-import { FaRegComment } from 'react-icons/fa';
-// import { BsHeart } from 'react-icons/bs';
+import { Heart } from '@/components/icons/Heart';
+import { Comment } from '@/components/icons/Comment';
 
-export const Post = () => {
+import { TypePost } from '../postsData';
+
+interface PostProps {
+  post: TypePost;
+  active?: boolean;
+}
+
+export const Post = ({ post, active }: PostProps) => {
   return (
-    <div className={styles.container}>
-      <Image src="/images/posts/Img-1.svg" alt="" width={370} height={370} />
+    <div className={`${styles.container} ${active ? styles.active : ''}`}>
+      <Image src={post.src} alt={post.title} width={370} height={370} />
       <div className={styles.ratings}>
         <div className={styles.likes}>
-          <AiFillHeart />
-          <span>321</span>
+          <Heart />
+          <span>{post.likes}</span>
         </div>
         <div className={styles.comments}>
-          <FaRegComment />
-          <span>140</span>
+          <Comment />
+          <span>{post.comments}</span>
         </div>
       </div>
-      <h4>Vibrações Eletrizantes na OneBitMusic</h4>
-      <p>
-        Uma imagem que captura a energia contagiante do show digital da
-        #OneBitMusic. Os visuais hipnotizantes e a batida pulsante nos
-        transportaram para uma jornada musical incrível. Compartilhe suas fotos
-        e faça parte da nossa galeria de fãs!
-      </p>
+      <h4>{post.title}</h4>
+      <p>{post.description}</p>
     </div>
   );
 };

@@ -1,0 +1,43 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  gap: 1.88rem;
+  max-width: 120rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  & .prev,
+  & .next {
+    position: absolute;
+    top: 11.5625rem;
+    transform: translateY(-50%);
+    padding: 0;
+    background-color: var(--gray-200);
+    border-radius: 50%;
+    padding: 18.5px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    cursor: pointer;
+  }
+
+  & .prev {
+    left: 3%;
+  }
+
+  & .next {
+    right: 3%;
+  }
+}
+
+// @media (max-width: 122.5rem) {
+//   .carousel {
+//     & .prev {
+//       left: calc(3% - 10px);
+//     }
+//   }
+// }

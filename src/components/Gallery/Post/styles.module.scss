@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  
+  opacity: 0.3;
+
+  &.active {
+    opacity: initial;
+  }
 
   & img {
     margin-bottom: 1rem;
@@ -42,14 +48,7 @@
   svg {
     width: 1.5rem;
     height: 1.5rem;
-    
-    path {
-      // border: 5px solid blue;
-      // fill: transparent;
-      stroke-width: 5px;
-      stroke: red;
-      fill: #fff;
-    }
+    // fill: #fff ;
   }
 
   span {

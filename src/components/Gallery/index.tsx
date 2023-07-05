@@ -1,5 +1,5 @@
 import { Title } from '../Title';
-import { Post } from './Post';
+import { Carousel } from './Carousel';
 import styles from './styles.module.scss';
 
 export const Gallery = () => {
@@ -8,13 +8,7 @@ export const Gallery = () => {
       <div className="limitedSection">
         <Title>Galeria de Momentos Compartilhados</Title>
       </div>
-      <div className={styles.carousel}>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-      </div>
+      <Carousel />
     </section>
   );
 };
