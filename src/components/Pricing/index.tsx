@@ -6,7 +6,7 @@ import { plans } from './plansData';
 
 export const Pricing = () => {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} limitedSection`}>
       <Title>Escolha o tipo de ingresso</Title>
       <div className={styles.cards}>
         {plans.map((plan) => (

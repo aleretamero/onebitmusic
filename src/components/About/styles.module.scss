@@ -14,11 +14,17 @@
   max-width: 33.125;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   & img {
     object-fit: contain;
+    margin-left: -0.5rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  .image {
+    justify-content: center;
   }
 }
 

@@ -8,7 +8,7 @@ import { Button } from '../Button';
 
 export const About = () => {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} limitedSection`}>
       <div className={styles.image}>
         <Image src={imageShows} alt="ImageShows" width={530} height={530} />
       </div>

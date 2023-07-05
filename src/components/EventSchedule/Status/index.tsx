@@ -15,7 +15,7 @@ const status = {
     name: 'AO VIVO',
     image: cam,
   },
-  ['coming-soon']: {
+  'coming-soon': {
     name: 'Em breve',
     image: clock,
   },
@@ -26,8 +26,6 @@ interface iProps {
 }
 
 export const Status = (props: iProps) => {
-  console.log(props.status);
-
   return (
     <div className={styles.container}>
       <span

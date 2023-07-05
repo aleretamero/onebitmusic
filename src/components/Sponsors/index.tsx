@@ -7,7 +7,7 @@ import { sponsors } from './sponsorsData';
 
 export const Sponsors = () => {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} limitedSection`}>
       <Title>Nossos investidores</Title>
 
       <div className={styles.content}>

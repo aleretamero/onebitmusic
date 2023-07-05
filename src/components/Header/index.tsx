@@ -33,7 +33,7 @@ export const Header = () => {
 
   return (
     <header
-      className={styles.header}
+      className={`${styles.header} limitedSection`}
       style={{
         backgroundColor: isScrollAtTop ? 'transparent' : 'rgba(0, 0, 0, 0.9)',
       }}
@@ -68,7 +68,7 @@ export const Header = () => {
           <Link href="" className={styles.link}>
             CONTATO
           </Link>
-          <Button color='light'>COMPRAR INGRESSOS</Button>
+          <Button color="light">COMPRAR INGRESSOS</Button>
         </nav>
       )}
     </header>

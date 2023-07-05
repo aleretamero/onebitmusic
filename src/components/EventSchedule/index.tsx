@@ -17,7 +17,7 @@ export const EventSchedule = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} limitedSection`}>
       <Title style={{ textAlign: 'start' }}>Nossa Programação</Title>
 
       <ul className={styles.listDays}>
