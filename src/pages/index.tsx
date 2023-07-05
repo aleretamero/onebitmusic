@@ -4,7 +4,7 @@ import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';
 import { Artists } from '../components/Artists';
-import { Programming } from '../components/Programming';
+import { EventSchedule } from '../components/EventSchedule';
 import { Pricing } from '../components/Pricing';
 import { Sponsors } from '../components/Sponsors';
 import { Gallery } from '../components/Gallery';
@@ -25,7 +25,7 @@ export default function Home() {
         <Hero />
         <About />
         <Artists />
-        {/* <Programming /> */}
+        <EventSchedule />
         <Pricing />
         <Sponsors />
         {/* <Gallery /> */}

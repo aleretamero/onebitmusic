@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { Logo } from '../Logo';
 
-import { socialMedias } from './dataSocialMedias';
+import { socialMedias } from './socialMediasData';
 
 export const Footer = () => {
   return (

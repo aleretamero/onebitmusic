@@ -4,13 +4,22 @@
   justify-content: center;
   padding-top: 8.25rem;
   padding-bottom: 5.97rem;
+  justify-content: center;
   align-items: center;
-  gap: 4.38rem;
+  column-gap: 4.38rem;
+  row-gap: 3rem;
 }
 
 .image {
   max-width: 33.125;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    object-fit: contain;
+  }
 }
 
 .content {
@@ -26,5 +35,26 @@
     font-weight: 400;
     line-height: 1.5rem;
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 60rem) {
+  .container {
+    padding-top: 6rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 30rem) {
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    margin-bottom: -8rem;
+    z-index: 1;
+  }
+
+  .content {
+    margin-top: -5rem;
   }
 }

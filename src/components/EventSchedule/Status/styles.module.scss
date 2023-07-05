@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .name {
+    color: var(--gray-200);
+    text-align: right;
+    font-weight: 700;
+  }
+
+  .name.online {
+    color: var(--red-600);
+  }
+}

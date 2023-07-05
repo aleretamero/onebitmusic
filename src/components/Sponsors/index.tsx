@@ -3,7 +3,7 @@ import { Title } from '../Title';
 import styles from './styles.module.scss';
 import Image from 'next/image';
 
-import { sponsors } from './dataSponsors';
+import { sponsors } from './sponsorsData';
 
 export const Sponsors = () => {
   return (
