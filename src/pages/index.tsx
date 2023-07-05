@@ -30,8 +30,8 @@ export default function Home() {
         <Pricing />
         <Sponsors />
         {/* <Testimonials /> */}
-        {/* <Gallery /> */}
-        <Contact />
+        <Gallery />
+        {/* <Contact /> */}
         <Footer />
       </main>
     </>

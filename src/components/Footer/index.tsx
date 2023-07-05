@@ -9,7 +9,7 @@ import { socialMedias } from './socialMediasData';
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} limitedSection`}>
       <Logo />
       <div>
         <div className={styles.socialMedias}>

@@ -1,0 +1,66 @@
+.container {
+  flex: 1 0 23.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & img {
+    margin-bottom: 1rem;
+    width: 23.125rem;
+    height: 23.125rem;
+  }
+
+  & h4 {
+    width: 23.125rem;
+    color: var(--gray-200);
+    font-family: Raleway;
+    line-height: 1.5rem;
+  }
+
+  & p {
+    width: 23.125rem;
+    color: var(--gray-200);
+    font-family: Raleway;
+    line-height: 1.5rem;
+    opacity: 0.5;
+  }
+}
+
+.ratings {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.likes,
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    path {
+      // border: 5px solid blue;
+      // fill: transparent;
+      stroke-width: 5px;
+      stroke: red;
+      fill: #fff;
+    }
+  }
+
+  span {
+    color: var(--gray-200);
+    text-align: right;
+    font-weight: 700;
+  }
+}
+
+.comments {
+  svg {
+    transform: scaleX(-1);
+  }
+}
