@@ -1,4 +1,21 @@
-export const events = {
+type TypeDay = {
+  time: string;
+  description: string;
+  artists: {
+    image: string;
+    name: string;
+    booth: string;
+  }[];
+  status: 'previa' | 'online' | 'coming-soon';
+};
+
+type TypeEvents = {
+  day1: TypeDay[];
+  day2: TypeDay[];
+  day3: TypeDay[];
+};
+
+export const events: TypeEvents = {
   day1: [
     {
       time: '11:00 AM to 12:00 PM',
@@ -6,7 +23,7 @@ export const events = {
         'Desfrute de uma performance emocionante com Yui Ronald, um artista solo que encanta o público com sua voz cativante e letras inspiradoras. Prepare-se para uma noite de músicas envolventes e momentos emocionantes.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-2.svg',
           name: 'Yui Ronald',
           booth: '2F12',
         },
@@ -19,17 +36,17 @@ export const events = {
         'O trio que vai levar você a uma jornada musical com suas harmonias vocais encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado que abrange diversos estilos musicais e emocione seus sentidos.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-1.svg',
           name: 'Bob John',
           booth: '3G12',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-2.svg',
           name: 'Yui Ronald',
           booth: '2F12',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-3.svg',
           name: 'Emma Satoshi',
           booth: '2A35',
         },
@@ -42,109 +59,119 @@ export const events = {
         'A dupla que vai conquistar seu coração com sua música cativante e performances cheias de energia. Com sua sintonia perfeita e talento extraordinário, eles criarão um ambiente envolvente e contagiarão o público com seu estilo musical único.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Sasha Jackson',
           booth: '2F18',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-5.svg',
           name: 'Diana Brock',
           booth: '2F24',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
   ],
   day2: [
     {
-      time: '11:00 AM to 12:00 PM',
+      time: '1:00 PM to 2:00 PM',
       description:
-        'Prepare-se para uma performance empolgante com a banda The Vibes, composta por talentosos músicos que combinam diferentes gêneros musicais para criar um som único e contagiante. Deixe-se levar pela energia e pelas melodias envolventes deste incrível grupo.',
+        "Venha se divertir com a banda 'Null and the Undefined', conhecida por seus hits animados e letras divertidas. Prepare-se para dançar e cantar junto com eles!",
       artists: [
         {
           image: '',
-          name: 'The Vibes',
-          booth: '1A22',
+          name: 'Null',
+          booth: '3F15',
+        },
+        {
+          image: '',
+          name: 'Undefined',
+          booth: '3F15',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
     {
-      time: '01:00 PM to 03:00 PM',
+      time: '3:00 PM to 4:00 PM',
       description:
-        'Se você é fã de música acústica, não pode perder o show solo de Alice Thompson. Com sua voz doce e letras poéticas, Alice cria um ambiente intimista e emocionante. Permita-se relaxar e aproveitar a beleza das melodias neste momento especial.',
+        '"Spaceship Destroyer e 404 Not Found" - A dupla mais explosiva da galáxia musical! Spaceship Destroyer, o guitarrista intergaláctico com solos destruidores, se une a 404 Not Found, o baterista perdido em seu próprio ritmo cósmico.',
       artists: [
         {
           image: '',
-          name: 'Alice Thompson',
-          booth: '4B15',
+          name: '404 Not Found',
+          booth: '4F18',
+        },
+        {
+          image: '',
+          name: 'Spaceship Destroyer',
+          booth: '9FEC',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
     {
-      time: '04:00 PM to 06:00 PM',
+      time: '5:00 PM to 6:00 PM',
       description:
-        'Uma banda de rock que vai fazer você pular e cantar junto! The Wild Ones é conhecida por suas performances eletrizantes e suas músicas cativantes. Prepare-se para uma tarde de pura diversão e adrenalina com esta incrível banda.',
+        '"Ziri Piri e Infinit Loop" - A dupla mais improvável da música algoritmicamente estranha! Ziri Piri, o mestre das letras sem sentido, une forças com Infinit Loop, o produtor de batidas frenéticas e loops intermináveis.',
       artists: [
         {
           image: '',
-          name: 'The Wild Ones',
-          booth: '3C10',
+          name: 'Infinite Loop',
+          booth: '5F21',
+        },
+        {
+          image: '',
+          name: 'Ziri Piri',
+          booth: '8C95',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
   ],
   day3: [
     {
-      time: '10:00 AM to 12:00 PM',
+      time: '1:00 PM to 2:00 PM',
       description:
-        'Um dueto emocionante que combina piano e violino para criar uma experiência musical única. Maria Rodriguez e David Chen são músicos talentosos que se complementam perfeitamente, trazendo uma harmonia excepcional para cada melodia.',
+        "Venha se divertir com a banda 'Error 404' e sua música peculiarmente engraçada. Com letras que vão fazer você rir e melodias cativantes, prepare-se para uma tarde de diversão e boas risadas.",
       artists: [
         {
           image: '',
-          name: 'Maria Rodriguez',
-          booth: '2E07',
-        },
-        {
-          image: '',
-          name: 'David Chen',
-          booth: '2E09',
+          name: 'Error 404',
+          booth: '6D23',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
     {
-      time: '02:00 PM to 04:00 PM',
+      time: '3:00 PM to 4:00 PM',
       description:
-        'Um show eletrônico que vai agitar o público! DJ Max e DJ Mia são mestres das batidas e sabem como fazer a plateia dançar. Prepare-se para uma tarde cheia de energia e diversão com os melhores hits da música eletrônica.',
+        '"Syntax Error" - A banda que vai desafiar seus ouvidos e seu senso de realidade com suas composições musicais totalmente fora do padrão. Prepare-se para uma experiência sonora caótica e intrigante.',
       artists: [
         {
           image: '',
-          name: 'DJ Max',
-          booth: '5D12',
+          name: 'Syntax',
+          booth: '7E10',
         },
         {
           image: '',
-          name: 'DJ Mia',
-          booth: '5D14',
+          name: 'Error',
+          booth: '7E10',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
     {
-      time: '06:00 PM to 07:30 PM',
+      time: '5:00 PM to 6:00 PM',
       description:
-        'Uma apresentação surpreendente de música clássica com a talentosa orquestra The Harmonics. Deixe-se encantar pelos sons dos instrumentos e pelas melodias atemporais executadas por esse grupo excepcional de músicos.',
+        'Prepare-se para um encontro musical de outro mundo com a dupla "Byte Brothers". Esses músicos virtuosos vão levar você a uma viagem sonora através do universo digital, combinando sons eletrônicos e melodias viciantes.',
       artists: [
         {
           image: '',
-          name: 'The Harmonics',
-          booth: '6F20',
+          name: 'Byte Brothers',
+          booth: '2B37',
         },
       ],
-      status: 'comming-soon',
+      status: 'coming-soon',
     },
   ],
 };

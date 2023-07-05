@@ -15,7 +15,7 @@ const status = {
     name: 'AO VIVO',
     image: cam,
   },
-  ['comming-soon']: {
+  ['coming-soon']: {
     name: 'Em breve',
     image: clock,
   },

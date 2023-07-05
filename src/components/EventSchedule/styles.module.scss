@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   padding-top: 10rem;
-  background: linear-gradient(180deg, #49494f 40%, #464646 100%);
+  background: linear-gradient(180deg, #49494f 40%, #5c5c5c 100%);
 }
 
 .listDays {
@@ -30,6 +30,7 @@
     position: absolute;
     bottom: 0;
     opacity: 0.1;
+    transition: 0.3s;
   }
 
   & strong {
@@ -38,12 +39,14 @@
     font-weight: 800;
     line-height: 2.375rem;
     opacity: 0.5;
+    transition: 0.3s;
   }
 
   & span {
     color: var(--gray-800);
     font-weight: 700;
     opacity: 0.2;
+    transition: 0.3s;
   }
 
   &.active {
@@ -101,7 +104,6 @@
 }
 
 .infoShows {
-  // width: 100%;
   width: 73rem;
   padding: 2.5rem;
   display: grid;
@@ -114,7 +116,7 @@
     border: 0;
   }
 
-  & span {
+  & time {
     color: var(--gray-200);
     font-family: Raleway;
     line-height: 1.5rem;
@@ -125,6 +127,12 @@
     font-family: Raleway;
     font-weight: 700;
     line-height: 1.5rem;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   & div {
