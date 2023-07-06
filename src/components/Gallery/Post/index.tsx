@@ -2,8 +2,8 @@ import styles from './styles.module.scss';
 
 import Image from 'next/image';
 
-import { Heart } from '@/components/icons/Heart';
-import { Comment } from '@/components/icons/Comment';
+import { IconHeart } from '@/components/icons/IconHeart';
+import { IconComment } from '@/components/icons/IconComment';
 
 import { TypePost } from '../postsData';
 
@@ -18,11 +18,11 @@ export const Post = ({ post, active }: PostProps) => {
       <Image src={post.src} alt={post.title} width={370} height={370} />
       <div className={styles.ratings}>
         <div className={styles.likes}>
-          <Heart />
+          <IconHeart />
           <span>{post.likes}</span>
         </div>
         <div className={styles.comments}>
-          <Comment />
+          <IconComment />
           <span>{post.comments}</span>
         </div>
       </div>

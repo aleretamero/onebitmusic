@@ -3,8 +3,8 @@ import styles from './styles.module.scss';
 import { useEffect, useState } from 'react';
 import { useMedia } from '@/hooks/useMedia';
 
-import { ArrowPrev } from '@/components/icons/ArrowPrev';
-import { ArrowNext } from '@/components/icons/ArrowNext';
+import { IconArrowPrev } from '@/components/icons/IconArrowPrev';
+import { IconArrowNext } from '@/components/icons/IconArrowNext';
 
 import { Post } from '../Post';
 import { postsData, TypePost } from '../postsData';
@@ -42,8 +42,8 @@ export const Carousel = () => {
 
   return (
     <div className={styles.carousel}>
-      <ArrowPrev className={styles.prev} onClick={handlePrevPost} />
-      <ArrowNext className={styles.next} onClick={handleNextPost} />
+      <IconArrowPrev className={styles.prev} onClick={handlePrevPost} />
+      <IconArrowNext className={styles.next} onClick={handleNextPost} />
       {posts.map((post, index) => (
         <Post
           key={post.title}

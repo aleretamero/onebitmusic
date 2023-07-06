@@ -29,11 +29,12 @@
     flex-direction: column;
     gap: 2.75rem;
   }
-
+  
   & div {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    z-index: 1;
   }
 
   & span {

@@ -1,4 +1,4 @@
-export const ArrowPrev = ({ ...props }) => {
+export const IconArrowNext = ({ ...props }) => {
   return (
     <svg
       {...props}
@@ -9,7 +9,7 @@ export const ArrowPrev = ({ ...props }) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M4.51482 9.15569L11.4448 16.0857L9.46522 18.0653L0.555625 9.15569L9.46523 0.246094L11.4448 2.22569L4.51482 9.15569Z"
+        d="M7.48615 9.15534L0.556152 2.22534L2.53575 0.245739L11.4454 9.15534L2.53575 18.0649L0.556152 16.0853L7.48615 9.15534Z"
         fill="#222222"
       />
     </svg>

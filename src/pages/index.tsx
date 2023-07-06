@@ -29,7 +29,7 @@ export default function Home() {
         <EventSchedule />
         <Pricing />
         <Sponsors />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <Gallery />
         <Contact />
         <Footer />

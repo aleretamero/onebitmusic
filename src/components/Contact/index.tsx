@@ -1,19 +1,24 @@
+import styles from './styles.module.scss';
 import { Button } from '../Button';
 import { Title } from '../Title';
-import styles from './styles.module.scss';
+
+import { IconEnvelope } from '../icons/IconEnvelope';
+import { IconPhone } from '../icons/IconPhone';
 
 export const Contact = () => {
   return (
     <div className={styles.container}>
       <aside className={styles.contact}>
-        <Title style={{color: '#fefefe', textAlign: 'start'}}>Nos contate</Title>
+        <Title style={{ color: '#fefefe', textAlign: 'start' }}>
+          Nos contate
+        </Title>
         <address>
           <div>
-            {/* icon */}
+            <IconPhone />
             <span>+55 99823-3232</span>
           </div>
           <div>
-            {/* icon */}
+            <IconEnvelope />
             <span>contato@onebitmusic.com</span>
           </div>
         </address>
