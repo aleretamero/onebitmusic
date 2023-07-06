@@ -20,6 +20,8 @@ export const Header = () => {
       setIsScrollAtTop(scrollTop === 0);
     };
 
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -35,7 +37,9 @@ export const Header = () => {
     <header
       className={`${styles.header} limitedSection`}
       style={{
-        backgroundColor: isScrollAtTop ? 'transparent' : 'rgba(34, 34, 34, 0.95)',
+        backgroundColor: isScrollAtTop
+          ? 'transparent'
+          : 'rgba(34, 34, 34, 0.95)',
       }}
     >
       <Logo />
