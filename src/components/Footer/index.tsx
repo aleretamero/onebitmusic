@@ -1,6 +1,5 @@
 import styles from './styles.module.scss';
 
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Logo } from '../Logo';
@@ -15,12 +14,7 @@ export const Footer = () => {
         <div className={styles.socialMedias}>
           {socialMedias.map((item) => (
             <Link href={item.href} key={item.name}>
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={item.width}
-                height={item.height}
-              />
+              <item.Image />
             </Link>
           ))}
         </div>

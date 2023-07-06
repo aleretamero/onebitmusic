@@ -21,9 +21,22 @@
   justify-self: flex-end;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap: 1.88;
   width: 210px;
+
+  & svg {
+    width: 1.875rem;
+    height: 1.875rem;
+
+    & path {
+      transition: 0.2s;
+    }
+
+    &:hover path {
+      fill: var(--red-600);
+    }
+  }
 }
 
 .copy {
