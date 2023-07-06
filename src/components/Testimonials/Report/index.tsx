@@ -13,11 +13,9 @@ export const Report = ({ report }: ReportProps) => {
   return (
     <>
       <article className={styles.article}>
-        <p>
-          <IconQuotes />
-          <span>{report.report}</span>
-          <IconQuotes />
-        </p>
+        <IconQuotes />
+        <p>{report.report}</p>
+        <IconQuotes />
       </article>
       <Profile
         src={report.profileAvatar}

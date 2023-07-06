@@ -13,4 +13,17 @@
   transform: translateY(0.63rem);
   opacity: 0.5;
   user-select: none;
+  // transition: 0.3s;
+}
+
+@media (max-width: 57.5rem) {
+  .carousel {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .sideReport {
+    transform: translateY(2rem);
+  }
 }
