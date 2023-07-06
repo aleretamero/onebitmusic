@@ -30,9 +30,12 @@ const calculateTimeLeft = () => {
 };
 
 export const Timer = () => {
-  const [timeLeft, setTimeLeft] = useState<TypeTimeLeft>(() =>
-    calculateTimeLeft()
-  );
+  const [timeLeft, setTimeLeft] = useState<TypeTimeLeft>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     const timer = setTimeout(() => {

@@ -54,32 +54,36 @@ export const EventSchedule = () => {
       </ul>
 
       <table className={styles.containerEventSchedule}>
-        <tr>
-          <th>Hora</th>
-          <th>Conteúdo</th>
-          <th>Artistas</th>
-        </tr>
-        {days.map((day, index) => (
-          <tr className={styles.infoShows} key={index}>
-            <td className={styles.time}>{day.time}</td>
-            <td className={styles.description}>{day.description}</td>
-            <td>
-              <ul>
-                {day.artists.map((artist, index) => (
-                  <Artist
-                    key={artist.name + index}
-                    image={artist.image}
-                    name={artist.name}
-                    booth={artist.booth}
-                  />
-                ))}
-              </ul>
-            </td>
-            <td className={styles.status}>
-              <Status status={day.status} />
-            </td>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Conteúdo</th>
+            <th>Artistas</th>
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {days.map((day, index) => (
+            <tr className={styles.infoShows} key={index}>
+              <td className={styles.time}>{day.time}</td>
+              <td className={styles.description}>{day.description}</td>
+              <td>
+                <ul>
+                  {day.artists.map((artist, index) => (
+                    <Artist
+                      key={artist.name + index}
+                      image={artist.image}
+                      name={artist.name}
+                      booth={artist.booth}
+                    />
+                  ))}
+                </ul>
+              </td>
+              <td className={styles.status}>
+                <Status status={day.status} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </section>
   );

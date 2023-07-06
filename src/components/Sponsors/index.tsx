@@ -12,13 +12,14 @@ export const Sponsors = () => {
 
       <div className={styles.content}>
         {sponsors.map((item) => (
-          <Image
-            key={item.name}
-            src={item.image}
-            alt={item.name}
-            width={item.width}
-            height={item.height}
-          />
+          <div key={item.name}>
+            <Image
+              src={item.image}
+              alt={item.name}
+              width={item.width}
+              height={item.height}
+            />
+          </div>
         ))}
       </div>
 

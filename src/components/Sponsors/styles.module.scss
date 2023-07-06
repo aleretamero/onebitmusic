@@ -18,10 +18,15 @@
   gap: 3.75rem;
   margin-bottom: 2.03rem;
 
-  & img {
+  & div {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  & div > img {
+    height: auto !important;
+    object-fit: contain;
   }
 }
 
@@ -38,7 +43,7 @@
 @media (max-width: 30rem) {
   .content {
     gap: 3rem;
-    & img {
+    & div {
       width: 8.5rem;
     }
   }

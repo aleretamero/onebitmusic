@@ -81,7 +81,7 @@
   margin-top: 2.5rem;
   overflow-x: auto;
 
-  & tr:first-child {
+  & thead tr:first-child {
     padding: 2.56rem;
     display: grid;
     grid-template-columns: 14.375rem 23.125rem 16.875rem 1fr;
@@ -142,7 +142,7 @@
 
 @media (max-width: 78rem) {
   .containerEventSchedule {
-    & tr:first-child {
+    & thead tr:first-child {
       grid-template-columns: 14.375rem 23.125rem 16.875rem 6rem;
       gap: 1.2rem;
     }
@@ -155,9 +155,13 @@
   }
 }
 
-@media (max-width: 65.1875rem) {
+@media (max-width: 65.3rem) {
   .containerEventSchedule {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  .time {
+    font-size: 0.9rem;
   }
 }
