@@ -1,8 +1,12 @@
-import { IconQuotes } from '@/components/icons/IconQuotes';
 import styles from './styles.module.scss';
 
+import { IconQuotes } from '@/components/icons/IconQuotes';
+
+import { Profile } from '../Profile';
+import { TypeReport } from '../reportsData';
+
 interface ReportProps {
-  report?: string;
+  report: TypeReport;
 }
 
 export const Report = ({ report }: ReportProps) => {
@@ -11,17 +15,15 @@ export const Report = ({ report }: ReportProps) => {
       <article className={styles.article}>
         <p>
           <IconQuotes />
-          <span>
-            Através dos shows digitais e da tecnologia de realidade virtual da
-            OneBitMusic, pude mergulhar em um universo musical fascinante. Os
-            visuais deslumbrantes, a qualidade do áudio e a interatividade
-            oferecida pela plataforma me deixaram maravilhado. A OneBitMusic
-            realmente entende como proporcionar experiências musicais únicas e
-            memoráveis.
-          </span>
+          <span>{report.report}</span>
           <IconQuotes />
         </p>
       </article>
+      <Profile
+        src={report.profileAvatar}
+        name={report.profileName}
+        city={report.ProfileCity}
+      />
     </>
   );
 };

@@ -8,11 +8,9 @@
   margin-top: 3.81rem;
 }
 
-.containerReport {
-  
-  &.side {
-    cursor: pointer;
-    transform: translateY(0.63rem);
-    opacity: 0.5;
-  }
+.sideReport {
+  cursor: pointer;
+  transform: translateY(0.63rem);
+  opacity: 0.5;
+  user-select: none;
 }

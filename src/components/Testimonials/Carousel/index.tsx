@@ -3,11 +3,11 @@ import styles from './styles.module.scss';
 
 import { useEffect, useState } from 'react';
 
-const data = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6'];
+import { reportsData, TypeReport } from '../reportsData';
 
 export const Carousel = () => {
-  const [reports, setReports] = useState<string[]>(data);
-  const [currentReports, setCurrentReports] = useState<string[]>([]);
+  const [reports, setReports] = useState<TypeReport[]>(reportsData);
+  const [currentReports, setCurrentReports] = useState<TypeReport[]>([]);
 
   useEffect(() => {
     const [prevReport, emphasisReport, nextReport] = reports;
@@ -32,13 +32,11 @@ export const Carousel = () => {
     <div className={styles.carousel}>
       {currentReports.map((item, index) => (
         <div
-          key={index}
+          key={item.profileName}
           onClick={() => handleReports(index)}
-          className={`${styles.containerReport} ${
-            index !== 1 ? styles.side : ''
-          }`}
+          className={index !== 1 ? styles.sideReport : styles.emphasisReport}
         >
-          <Report />
+          <Report report={item} />
         </div>
       ))}
     </div>
