@@ -2,8 +2,8 @@ import styles from './styles.module.scss';
 import { Button } from '../Button';
 import { Title } from '../Title';
 
-import { IconEnvelope } from '../icons/IconEnvelope';
-import { IconPhone } from '../icons/IconPhone';
+import { IconEnvelope } from '../Icons/IconEnvelope';
+import { IconPhone } from '../Icons/IconPhone';
 
 export const Contact = () => {
   return (

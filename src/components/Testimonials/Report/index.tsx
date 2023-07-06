@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 
-import { IconQuotes } from '@/components/icons/IconQuotes';
+import { IconQuotes } from '@/components/Icons/IconQuotes';
 
 import { Profile } from '../Profile';
 import { TypeReport } from '../reportsData';

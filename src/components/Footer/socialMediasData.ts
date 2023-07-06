@@ -1,7 +1,7 @@
-import { IconFacebook } from '../icons/IconFacebook';
-import { IconTwitter } from '../icons/IconTwitter';
-import { IconLinkedin } from '../icons/IconLinkedin';
-import { IconInstagram } from '../icons/IconInstagram';
+import { IconFacebook } from '../Icons/IconFacebook';
+import { IconTwitter } from '../Icons/IconTwitter';
+import { IconLinkedin } from '../Icons/IconLinkedin';
+import { IconInstagram } from '../Icons/IconInstagram';
 
 export const socialMedias = [
   { name: 'facebook', Image: IconFacebook, href: '' },

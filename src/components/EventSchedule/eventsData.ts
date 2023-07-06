@@ -79,12 +79,12 @@ export const events: TypeEvents = {
         "Venha se divertir com a banda 'Null and the Undefined', conhecida por seus hits animados e letras divertidas. Prepare-se para dançar e cantar junto com eles!",
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Null',
           booth: '3F15',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Undefined',
           booth: '3F15',
         },
@@ -97,12 +97,12 @@ export const events: TypeEvents = {
         '"Spaceship Destroyer e 404 Not Found" - A dupla mais explosiva da galáxia musical! Spaceship Destroyer, o guitarrista intergaláctico com solos destruidores, se une a 404 Not Found, o baterista perdido em seu próprio ritmo cósmico.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: '404 Not Found',
           booth: '4F18',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Spaceship Destroyer',
           booth: '9FEC',
         },
@@ -112,15 +112,15 @@ export const events: TypeEvents = {
     {
       time: '5:00 PM to 6:00 PM',
       description:
-        '"Ziri Piri e Infinit Loop" - A dupla mais improvável da música algoritmicamente estranha! Ziri Piri, o mestre das letras sem sentido, une forças com Infinit Loop, o produtor de batidas frenéticas e loops intermináveis.',
+        '"Ziri Piri e Infinite Loop" - A dupla mais improvável da música algoritmicamente estranha! Ziri Piri, o mestre das letras sem sentido, une forças com Infinite Loop, o produtor de batidas frenéticas e loops intermináveis.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Infinite Loop',
           booth: '5F21',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Ziri Piri',
           booth: '8C95',
         },
@@ -135,7 +135,7 @@ export const events: TypeEvents = {
         "Venha se divertir com a banda 'Error 404' e sua música peculiarmente engraçada. Com letras que vão fazer você rir e melodias cativantes, prepare-se para uma tarde de diversão e boas risadas.",
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Error 404',
           booth: '6D23',
         },
@@ -148,12 +148,12 @@ export const events: TypeEvents = {
         '"Syntax Error" - A banda que vai desafiar seus ouvidos e seu senso de realidade com suas composições musicais totalmente fora do padrão. Prepare-se para uma experiência sonora caótica e intrigante.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Syntax',
           booth: '7E10',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Error',
           booth: '7E10',
         },
@@ -166,7 +166,7 @@ export const events: TypeEvents = {
         'Prepare-se para um encontro musical de outro mundo com a dupla "Byte Brothers". Esses músicos virtuosos vão levar você a uma viagem sonora através do universo digital, combinando sons eletrônicos e melodias viciantes.',
       artists: [
         {
-          image: '',
+          image: '/images/artists/Avatar-4.svg',
           name: 'Byte Brothers',
           booth: '2B37',
         },

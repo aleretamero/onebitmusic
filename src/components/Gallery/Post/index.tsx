@@ -2,8 +2,8 @@ import styles from './styles.module.scss';
 
 import Image from 'next/image';
 
-import { IconHeart } from '@/components/icons/IconHeart';
-import { IconComment } from '@/components/icons/IconComment';
+import { IconHeart } from '@/components/Icons/IconHeart';
+import { IconComment } from '@/components/Icons/IconComment';
 
 import { TypePost } from '../postsData';
 

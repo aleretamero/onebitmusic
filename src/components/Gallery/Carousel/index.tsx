@@ -3,8 +3,8 @@ import styles from './styles.module.scss';
 import { useEffect, useState } from 'react';
 import { useMedia } from '@/hooks/useMedia';
 
-import { IconArrowPrev } from '@/components/icons/IconArrowPrev';
-import { IconArrowNext } from '@/components/icons/IconArrowNext';
+import { IconArrowPrev } from '@/components/Icons/IconArrowPrev';
+import { IconArrowNext } from '@/components/Icons/IconArrowNext';
 
 import { Post } from '../Post';
 import { postsData, TypePost } from '../postsData';
