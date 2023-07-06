@@ -17,7 +17,10 @@ export const EventSchedule = () => {
   };
 
   return (
-    <section className={`${styles.container} limitedSection`}>
+    <section
+      className={`${styles.container} limitedSection`}
+      id="event-schedule"
+    >
       <Title style={{ textAlign: 'start' }}>Nossa Programação</Title>
 
       <ul className={styles.listDays}>
@@ -50,32 +53,34 @@ export const EventSchedule = () => {
         </li>
       </ul>
 
-      <div className={styles.containerEventSchedule}>
-        <header>
-          <strong>Hora</strong>
-          <strong>Conteudo</strong>
-          <strong>Artistas</strong>
-        </header>
+      <table className={styles.containerEventSchedule}>
+        <tr>
+          <th>Hora</th>
+          <th>Conteúdo</th>
+          <th>Artistas</th>
+        </tr>
         {days.map((day, index) => (
-          <article className={styles.infoShows} key={index}>
-            <time>{day.time}</time>
-            <p>{day.description}</p>
-            <ul>
-              {day.artists.map((artist, index) => (
-                <Artist
-                  key={artist.name + index}
-                  image={artist.image}
-                  name={artist.name}
-                  booth={artist.booth}
-                />
-              ))}
-            </ul>
-            <div>
+          <tr className={styles.infoShows} key={index}>
+            <td className={styles.time}>{day.time}</td>
+            <td className={styles.description}>{day.description}</td>
+            <td>
+              <ul>
+                {day.artists.map((artist, index) => (
+                  <Artist
+                    key={artist.name + index}
+                    image={artist.image}
+                    name={artist.name}
+                    booth={artist.booth}
+                  />
+                ))}
+              </ul>
+            </td>
+            <td className={styles.status}>
               <Status status={day.status} />
-            </div>
-          </article>
+            </td>
+          </tr>
         ))}
-      </div>
+      </table>
     </section>
   );
 };

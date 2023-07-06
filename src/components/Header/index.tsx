@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { useEffect, useState } from 'react';
 
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { useMedia } from '@/hooks/useMedia';
 import { Logo } from '../Logo';
@@ -11,6 +12,7 @@ import { Button } from '../Button';
 export const Header = () => {
   const [isScrollAtTop, setIsScrollAtTop] = useState(true);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const router = useRouter()
 
   const mobile = useMedia('(max-width: 64rem)');
 
@@ -60,19 +62,19 @@ export const Header = () => {
             mobileMenu && mobile ? styles.active : ''
           }`}
         >
-          <Link href="" className={styles.link}>
+          <Link href="#hero" className={styles.link}>
             INICIO
           </Link>
-          <Link href="" className={styles.link}>
+          <Link href="#singers" className={styles.link}>
             ARTISTAS
           </Link>
-          <Link href="" className={styles.link}>
+          <Link href="#event-schedule" className={styles.link}>
             PROGRAMAÇÃO
           </Link>
-          <Link href="" className={styles.link}>
+          <Link href="#contact" className={styles.link}>
             CONTATO
           </Link>
-          <Button color="light">COMPRAR INGRESSOS</Button>
+          <Button color="light" onClick={() => router.push('#pricing')}>COMPRAR INGRESSOS</Button>
         </nav>
       )}
     </header>

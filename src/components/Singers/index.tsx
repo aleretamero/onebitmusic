@@ -8,7 +8,7 @@ import artists from '@/assets/artists.png';
 
 export const Singers = () => {
   return (
-    <section className={`${styles.container} limitedSection`}>
+    <section className={`${styles.container} limitedSection`} id='singers'>
       <div className={styles.content}>
         <Title style={{ textAlign: 'start' }}>Artistas</Title>
         <p>

@@ -7,7 +7,7 @@ import { IconPhone } from '../icons/IconPhone';
 
 export const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='contact'>
       <aside className={styles.contact}>
         <Title style={{ color: '#fefefe', textAlign: 'start' }}>
           Nos contate

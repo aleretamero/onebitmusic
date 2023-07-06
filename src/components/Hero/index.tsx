@@ -9,7 +9,7 @@ import { Button } from '../Button';
 
 export const Hero = () => {
   return (
-    <section className={`${styles.container} limitedSection`}>
+    <section className={`${styles.container} limitedSection`} id='hero'>
       <div className={styles.content}>
         <strong>A sua melhor Experiencia </strong>
         <h1>Musical Digital</h1>

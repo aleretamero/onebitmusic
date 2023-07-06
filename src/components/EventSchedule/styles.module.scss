@@ -3,7 +3,12 @@
   flex-direction: column;
   width: 100%;
   padding-top: 10rem;
-  background: linear-gradient(180deg, #49494f 40%, #5c5c5c 100%);
+  margin-bottom: 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(56, 29, 219, 0.05) 0%,
+    rgba(56, 29, 219, 0) 100%
+  );
 }
 
 .listDays {
@@ -67,39 +72,31 @@
 }
 
 .containerEventSchedule {
-  width: 73.125rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
   border-radius: 1.5rem;
   border: 1px solid var(--gray-200);
   margin-top: 2.5rem;
   overflow-x: auto;
 
-  & header {
+  & tr:first-child {
     padding: 2.56rem;
     display: grid;
     grid-template-columns: 14.375rem 23.125rem 16.875rem 1fr;
     gap: 1.87rem;
     background-color: rgba(34, 34, 34, 0.05);
 
-    & strong {
+    & th {
       flex: 1;
       color: var(--gray-200);
       font-size: 1.5rem;
       font-family: Raleway;
       font-weight: 700;
       line-height: 2.375rem;
+      text-align: start;
     }
-  }
-}
-
-@media (max-width: 78rem) {
-  .containerEventSchedule {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
 }
 
@@ -116,27 +113,51 @@
     border: 0;
   }
 
-  & time {
+  & .time {
     color: var(--gray-200);
     font-family: Raleway;
     line-height: 1.5rem;
   }
 
-  & p {
+  & .description {
     color: var(--gray-200);
     font-family: Raleway;
     font-weight: 700;
     line-height: 1.5rem;
   }
 
-  & ul {
+  & td > ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  & div {
+  & .status {
+    white-space: nowrap;
+    text-align: end;
     align-self: center;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 78rem) {
+  .containerEventSchedule {
+    & tr:first-child {
+      grid-template-columns: 14.375rem 23.125rem 16.875rem 6rem;
+      gap: 1.2rem;
+    }
+  }
+
+  .infoShows {
+    width: 100%;
+    grid-template-columns: 10rem 23.125rem 15rem 6rem;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 65.1875rem) {
+  .containerEventSchedule {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }

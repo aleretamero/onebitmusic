@@ -1,10 +1,9 @@
 .container {
-  background-color: var(--gray-600);
   display: flex;
   justify-content: center;
-  padding-top: 5.97rem;
   align-items: center;
   gap: 4.38rem;
+  margin-bottom: 14.56rem;
 }
 
 .image {
@@ -23,10 +22,7 @@
   & p {
     margin-top: 2rem;
     margin-bottom: 5rem;
-    font-size: 1rem;
     font-family: Raleway;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     opacity: 0.7;
   }
@@ -34,14 +30,17 @@
 
 @media (max-width: 60rem) {
   .container {
-    // padding-top: 6rem;
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+
     flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 30rem) {
   .container {
-    padding-top: 2rem;
+    margin-top: -8rem;
+    margin-bottom: 5rem;
     gap: 2rem;
   }
 
