@@ -9,7 +9,7 @@ type TypeDataPlan = {
 export const plans: TypeDataPlan[] = [
   {
     type: 'normal',
-    plan: 'Basico',
+    plan: 'Básico',
     price: '100',
     benefits: [
       'Acesso aos shows digitais',
@@ -20,7 +20,7 @@ export const plans: TypeDataPlan[] = [
   },
   {
     type: 'normal',
-    plan: 'Padrao',
+    plan: 'Padrão',
     price: '150',
     benefits: [
       'Acesso aos shows digitais',
