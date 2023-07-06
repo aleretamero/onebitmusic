@@ -71,7 +71,7 @@
   padding: 10rem 0;
   gap: 4rem;
   flex-direction: column;
-  background-color: var(--black);
+  background-color: var(--gray-800);
   transition: 0.4s;
 
   & .link {
@@ -85,8 +85,6 @@
 
 .link {
   font-size: 0.875rem;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.25rem;
 }

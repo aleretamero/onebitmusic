@@ -1,0 +1,7 @@
+<svg width="72" height="48" viewBox="0 0 72 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 48C24 21.4903 45.4903 0 72 0V48H24Z" fill="#F9F9F9"/>
+<path d="M0 0C26.5097 0 48 21.4903 48 48H0V0Z" fill="#464646"/>
+<g style="mix-blend-mode:overlay">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 47.9999H48C48 35.8265 43.4684 24.7116 36 16.25C28.5316 24.7116 24 35.8265 24 47.9999Z" fill="#464646"/>
+</g>
+</svg>

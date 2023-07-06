@@ -35,7 +35,7 @@ export const Header = () => {
     <header
       className={`${styles.header} limitedSection`}
       style={{
-        backgroundColor: isScrollAtTop ? 'transparent' : 'rgba(0, 0, 0, 0.9)',
+        backgroundColor: isScrollAtTop ? 'transparent' : 'rgba(34, 34, 34, 0.95)',
       }}
     >
       <Logo />

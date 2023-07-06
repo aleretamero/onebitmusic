@@ -3,18 +3,18 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  
   opacity: 0.3;
-
+  
   &.active {
     opacity: initial;
   }
-
+  
   & img {
     margin-bottom: 1rem;
     width: 23.125rem;
     height: 23.125rem;
     object-fit: cover;
+    user-select: none;
   }
 
   & h4 {
@@ -49,7 +49,6 @@
   svg {
     width: 1.5rem;
     height: 1.5rem;
-    // fill: #fff ;
   }
 
   span {

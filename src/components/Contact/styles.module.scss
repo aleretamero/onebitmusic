@@ -10,6 +10,18 @@
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
   background-color: var(--gray-800);
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url('/images/shape/shape-1.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 14rem;
+    height: 14.5rem;
+  }
 
   & address {
     margin-top: 8rem;
@@ -37,6 +49,18 @@
   padding-top: 8.69rem;
   padding-bottom: 8.69rem;
   background-color: rgba(34, 34, 34, 0.03);
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url('/images/shape/shape-2.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 56px;
+    width: 4.5rem;
+    height: 3rem;
+  }
 
   h3 {
     color: var(--gray-800);
