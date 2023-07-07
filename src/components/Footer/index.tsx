@@ -13,7 +13,7 @@ export const Footer = () => {
       <div>
         <div className={styles.socialMedias}>
           {socialMedias.map((item) => (
-            <Link href={item.href} key={item.name}>
+            <Link href={item.href} key={item.name} target="_blank">
               <item.Image />
             </Link>
           ))}

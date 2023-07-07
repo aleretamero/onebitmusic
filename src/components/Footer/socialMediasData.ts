@@ -4,8 +4,24 @@ import { IconLinkedin } from '../Icons/IconLinkedin';
 import { IconInstagram } from '../Icons/IconInstagram';
 
 export const socialMedias = [
-  { name: 'facebook', Image: IconFacebook, href: '' },
-  { name: 'twitter', Image: IconTwitter, href: '' },
-  { name: 'linkedin', Image: IconLinkedin, href: '' },
-  { name: 'instagram', Image: IconInstagram, href: '' },
+  {
+    name: 'facebook',
+    Image: IconFacebook,
+    href: 'https://www.facebook.com/onebitcode/',
+  },
+  {
+    name: 'twitter',
+    Image: IconTwitter,
+    href: 'https://twitter.com/onebitcode',
+  },
+  {
+    name: 'linkedin',
+    Image: IconLinkedin,
+    href: 'https://br.linkedin.com/school/onebitcode/',
+  },
+  {
+    name: 'instagram',
+    Image: IconInstagram,
+    href: 'https://www.instagram.com/onebitcode/',
+  },
 ];
