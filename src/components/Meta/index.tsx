@@ -1,4 +1,4 @@
-const url = 'https://onebitmusic-zeta.vercel.app/';
+const url = 'https://onebitmusic-zeta.vercel.app';
 const title = 'Onebitmusic - Especialistas em eventos músicais';
 const description =
   'Na onebitmusic, estamos redefinindo a maneira como experimentamos e nos envolvemos com a música, utilizando tecnologia de realidade virtual (VR) para criar shows e performances que transcendem os limites físicos e levam você a novos patamares de entretenimento musical.';
