@@ -72,11 +72,6 @@ export const Singers = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className={styles.image}> */}
-      {/* <Image src={artists} alt="ImageShows" width={670} height={712} /> */}
-
-      {/* </div> */}
     </section>
   );
 };
