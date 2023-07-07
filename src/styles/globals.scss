@@ -36,11 +36,13 @@ html {
   scroll-behavior: smooth !important;
 }
 
-body,
 input,
 textarea,
 select,
-button {
+button,
+main,
+header,
+footer {
   font: 400 1rem var(--montserrat), sans-serif;
   color: var(--gray-100);
 }
