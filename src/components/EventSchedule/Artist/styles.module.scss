@@ -14,7 +14,7 @@
   & h3 {
     grid-area: name;
     color: var(--gray-200);
-    font-family: Raleway;
+    font-family: var(--raleway);
     font-weight: 700;
     line-height: 1.5rem;
   }
@@ -22,7 +22,7 @@
   & p {
     grid-area: cod;
     color: var(--gray-200);
-    font-family: Raleway;
+    font-family: var(--raleway);
     font-weight: 400;
     line-height: 1.5rem;
     opacity: 0.5;

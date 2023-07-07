@@ -92,7 +92,7 @@
       flex: 1;
       color: var(--gray-200);
       font-size: 1.5rem;
-      font-family: Raleway;
+      font-family: var(--raleway);
       font-weight: 700;
       line-height: 2.375rem;
       text-align: start;
@@ -115,13 +115,13 @@
 
   & .time {
     color: var(--gray-200);
-    font-family: Raleway;
+    font-family: var(--raleway);
     line-height: 1.5rem;
   }
 
   & .description {
     color: var(--gray-200);
-    font-family: Raleway;
+    font-family: var(--raleway);
     font-weight: 700;
     line-height: 1.5rem;
   }

@@ -41,7 +41,7 @@ input,
 textarea,
 select,
 button {
-  font: 400 1rem 'Montserrat', sans-serif;
+  font: 400 1rem var(--montserrat), sans-serif;
   color: var(--gray-100);
 }
 
