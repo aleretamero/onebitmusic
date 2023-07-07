@@ -26,7 +26,7 @@ export const Post = ({ post, active }: PostProps) => {
           <span>{post.comments}</span>
         </div>
       </div>
-      <h4>{post.title}</h4>
+      <h3>{post.title}</h3>
       <p>{post.description}</p>
     </div>
   );
