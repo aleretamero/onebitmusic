@@ -11,21 +11,30 @@ interface PostProps {
   post: TypePost;
   active?: boolean;
   onClick: (title: string) => void;
+  setActivePost?: () => void;
 }
 
-export const Post = ({ post, active, onClick }: PostProps) => {
+export const Post = ({ post, active, onClick, setActivePost }: PostProps) => {
   return (
-    <div className={`${styles.container} ${active ? styles.active : ''}`}>
+    <div
+      className={`${styles.container} ${
+        active ? styles.active : styles.inactive
+      }`}
+      onClick={setActivePost}
+    >
       <Image src={post.src} alt={post.title} width={370} height={370} />
       <div className={styles.ratings}>
         <div className={styles.likes}>
           {post.isLiked ? (
             <IconLikedHeart
-              onClick={() => onClick(post.title)}
+              onClick={active ? () => onClick(post.title) : undefined}
               className={`${styles.iconLike} ${styles.liked}`}
             />
           ) : (
-            <IconHeart onClick={() => onClick(post.title)} />
+            <IconHeart
+              onClick={active ? () => onClick(post.title) : undefined}
+              className={styles.iconLike}
+            />
           )}
           <span>{post.isLiked ? post.likes + 1 : post.likes}</span>
         </div>

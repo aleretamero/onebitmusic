@@ -1,5 +1,4 @@
 import styles from './styles.module.scss';
-// import Image from 'next/image';
 import { Title } from '../Title';
 import { Artist } from './Artist';
 import { Status } from './Status';
@@ -59,6 +58,7 @@ export const EventSchedule = () => {
             <th>Hora</th>
             <th>Conteúdo</th>
             <th>Artistas</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>

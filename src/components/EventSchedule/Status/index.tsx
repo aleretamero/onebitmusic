@@ -35,19 +35,7 @@ export const Status = (props: iProps) => {
       >
         {status[props.status].name}
       </span>
-      <StatusImage
-        width="1.5rem"
-        height="1.5rem"
-        // styles={{ width: '1.5rem !important', height: '1.5rem !important' }}
-      />
-      {/* <status[props.status].Image /> */}
-
-      {/* <Image
-        src={status[props.status].image}
-        alt={status[props.status].name}
-        width={24}
-        height={24}
-      /> */}
+      <StatusImage width="24px" height="24px" />
     </div>
   );
 };

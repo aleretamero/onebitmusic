@@ -9,6 +9,10 @@
     opacity: initial;
   }
 
+  &.inactive {
+    cursor: pointer;
+  }
+
   & img {
     margin-bottom: 1rem;
     width: 23.125rem;

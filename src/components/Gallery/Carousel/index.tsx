@@ -44,6 +44,20 @@ export const Carousel = () => {
     setPosts(updatedPosts);
   };
 
+  const handleActivePost = (index: number) => {
+    if (activePosts?.includes(index)) return;
+
+    const postsNumber = windowWidth ? 1 : 2;
+
+    if (index === Math.floor(postsData.length / 2) - postsNumber) {
+      handlePrevPost();
+    }
+
+    if (index === Math.floor(postsData.length / 2) + postsNumber) {
+      handleNextPost();
+    }
+  };
+
   const handlePrevPost = () => {
     setPosts((currentPosts) => {
       const updatedPosts = [...currentPosts];
@@ -69,6 +83,7 @@ export const Carousel = () => {
           post={post}
           onClick={handleChangeLike}
           active={activePosts?.includes(index)}
+          setActivePost={() => handleActivePost(index)}
         />
       ))}
     </div>

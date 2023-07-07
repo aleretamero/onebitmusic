@@ -3,7 +3,6 @@ import styles from './styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// import play from '@/assets/Play.svg';
 import { IconPlay } from '../Icons/IconPlay';
 import { Timer } from './Timer';
 import { Button } from '../Button';
