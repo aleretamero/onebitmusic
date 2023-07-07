@@ -33,18 +33,17 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: -2rem;
     border-radius: 5rem;
     background-size: contain;
     background-repeat: no-repeat;
-    filter: blur(1rem);
+    filter: blur(0.5rem);
   }
 }
 
 .content1 {
   &::before {
     background: url('/images/singers/blur-1.png');
-    animation: rotation 2.5s infinite linear;
+    animation: rotation 2.5s infinite linear alternate;
   }
 }
 
@@ -53,7 +52,7 @@
 
   &::before {
     background: url('/images/singers/blur-2.png');
-    animation: rotation 3.5s infinite linear;
+    animation: rotation 4s infinite linear alternate;
   }
 }
 
@@ -62,14 +61,14 @@
 
   &::before {
     background: url('/images/singers/blur-3.png');
-    animation: rotation 3.5s infinite linear;
+    animation: rotation 3.5s infinite linear alternate;
   }
 }
 
 .content4 {
   &::before {
     background: url('/images/singers/blur-4.png');
-    animation: rotation 2.5s infinite linear;
+    animation: rotation 2.5s infinite linear alternate;
   }
 }
 
@@ -160,9 +159,9 @@
 
 @keyframes rotation {
   0% {
-    transform: rotate(0deg) translateX(13px) rotate(0deg);
+    transform: rotate(0deg) translateX(0.75rem) rotate(0deg) scale(1);
   }
   100% {
-    transform: rotate(360deg) translateX(13px) rotate(-360deg);
+    transform: rotate(360deg) translateX(-0.75rem) rotate(-360deg) scale(1.02);
   }
 }

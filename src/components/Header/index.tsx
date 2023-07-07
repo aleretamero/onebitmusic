@@ -65,28 +65,28 @@ export const Header = () => {
           <Link
             href="#hero"
             className={styles.link}
-            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+            onClick={() => mobile && setMobileMenu(false)}
           >
             INICIO
           </Link>
           <Link
             href="#singers"
             className={styles.link}
-            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+            onClick={() => mobile && setMobileMenu(false)}
           >
             ARTISTAS
           </Link>
           <Link
             href="#event-schedule"
             className={styles.link}
-            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+            onClick={() => mobile && setMobileMenu(false)}
           >
             PROGRAMAÇÃO
           </Link>
           <Link
             href="#contact"
             className={styles.link}
-            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+            onClick={() => mobile && setMobileMenu(false)}
           >
             CONTATO
           </Link>
@@ -94,7 +94,7 @@ export const Header = () => {
             color="light"
             onClick={() => {
               router.push('#pricing');
-              setMobileMenu((currentValue) => !currentValue);
+              mobile && setMobileMenu(false);
             }}
           >
             COMPRAR INGRESSOS

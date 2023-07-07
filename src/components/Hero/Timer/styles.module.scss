@@ -3,8 +3,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: 100%;
-  max-width: 83.125rem;
+  width: 83.125rem;
   text-align: center;
   font-size: 9rem;
   font-weight: 900;
@@ -16,41 +15,61 @@
 
   & span {
     flex: 1;
-  }
-}
 
-@media (max-width: 78rem) {
-  .timer {
+    &:nth-child(1) {
+      text-align: start;
+
+      @media (max-width: 90rem) {
+        text-align: center;
+      }
+    }
+
+    &:nth-child(2) {
+      text-align: start;
+      @media (max-width: 90rem) {
+        text-align: center;
+      }
+    }
+
+    &:nth-child(3) {
+      text-align: end;
+      @media (max-width: 90rem) {
+        text-align: center;
+      }
+    }
+
+    &:nth-child(4) {
+      text-align: end;
+      @media (max-width: 90rem) {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 90rem) {
+    width: 100%;
+  }
+  @media (max-width: 78rem) {
     font-size: 8rem;
   }
-}
 
-@media (max-width: 60rem) {
-  .timer {
+  @media (max-width: 60rem) {
     font-size: 6.5rem;
   }
-}
 
-@media (max-width: 48rem) {
-  .timer {
+  @media (max-width: 48rem) {
     font-size: 5.5rem;
   }
-}
 
-@media (max-width: 40rem) {
-  .timer {
+  @media (max-width: 40rem) {
     font-size: 4.5rem;
   }
-}
 
-@media (max-width: 32rem) {
-  .timer {
+  @media (max-width: 32rem) {
     font-size: 3.5rem;
   }
-}
 
-@media (max-width: 28rem) {
-  .timer {
+  @media (max-width: 28rem) {
     font-size: 3rem;
   }
 }
