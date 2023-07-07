@@ -58,7 +58,7 @@ export const EventSchedule = () => {
             <th>Hora</th>
             <th>Conteúdo</th>
             <th>Artistas</th>
-            <th></th>
+            <th style={{ visibility: 'hidden' }}>Status</th>
           </tr>
         </thead>
         <tbody>
