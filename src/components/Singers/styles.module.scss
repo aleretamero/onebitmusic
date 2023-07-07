@@ -1,17 +1,79 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 41.875rem;
+  place-items: center;
   gap: 4.38rem;
   margin-bottom: 14.56rem;
 }
 
-.image {
-  max-width: 41.875rem;
-  width: 100%;
+.containerImages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.88rem;
+}
 
-  img {
+.row {
+  display: flex;
+  gap: 1.88rem;
+}
+
+.contentImage {
+  position: relative;
+
+  & img {
     object-fit: contain;
+  }
+
+  &::before {
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -2rem;
+    border-radius: 5rem;
+    opacity: 0.7;
+    opacity: 0.9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(15px);
+    transform: translate(50px);
+  }
+}
+
+.content1 {
+  transform: translateY(0);
+  &::before {
+    background: url('/images/singers/blur-1.png');
+    animation: rotation1 2s infinite linear;
+  }
+}
+
+.content2 {
+  transform: translateY(0);
+  margin-top: -3.19rem;
+
+  &::before {
+    background: url('/images/singers/blur-2.png');
+    animation: rotation2 3s infinite linear;
+  }
+}
+
+.content3 {
+  transform: translateY(1.31rem);
+
+  &::before {
+    background: url('/images/singers/blur-3.png');
+    animation: rotation3 3s infinite linear;
+  }
+}
+
+.content4 {
+  transform: translateY(0);
+  &::before {
+    background: url('/images/singers/blur-4.png');
+    animation: rotation4 2s infinite linear;
   }
 }
 
@@ -28,23 +90,246 @@
   }
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 80.625rem) {
   .container {
-    margin-top: -10rem;
-    margin-bottom: 10rem;
+    grid-template-columns: 1fr;
+  }
 
+  .content {
+    max-width: 41.875rem;
+  }
+}
+
+@media (max-width: 49.375rem) {
+  .containerImages {
+    width: 100%;
+    // gap: 1rem;
+  }
+  .row {
     flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 100%;
+    // gap: 1rem;
+
+    &:last-child {
+      flex-direction: column;
+    }
+  }
+
+  // .content1 {
+  // transform: translateX(5vw);
+  // }
+
+  .content2 {
+    align-self: flex-end;
+    margin-top: 0;
+
+    &::before {
+      transform: translate(-50px);
+    }
+  }
+
+  .content3 {
+    align-self: flex-end;
+    transform: translateY(0);
+  }
+
+  .content4 {
+    &::before {
+      // transform: translate(-50px);
+    }
   }
 }
 
 @media (max-width: 30rem) {
-  .container {
-    margin-top: -8rem;
-    margin-bottom: 5rem;
-    gap: 2rem;
+  .content1 {
+    align-self: center;
+    &::before {
+      transform: translate(10px);
+    }
   }
 
-  .content {
-    margin-top: -10rem;
+  .content2 {
+    align-self: center;
+
+    &::before {
+      transform: translate(-10px);
+    }
+  }
+
+  .content3 {
+    align-self: center;
+    &::before {
+      transform: translate(10px);
+    }
+  }
+
+  .content4 {
+    align-self: center;
+
+    &::before {
+      transform: translate(-10px);
+    }
+  }
+}
+/*
+ 
+
+
+
+@media (max-width: 68.75rem) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .containerImages {
+    max-width: 41.875rem;
+    width: 100%;
+    height: auto;
+    //   width: 41.875rem;
+    //   height: 44.5rem;
+    //   position: relative;
+
+    //   & > div {
+    //     position: absolute;
+
+    //     & > img {
+    //       width: 100%;
+    //       height: auto;
+    //       z-index: 1;
+    //     }
+
+    //     &::after {
+    //       content: '';
+    //       // width: 100%;
+    //       // height: 100%;
+    //       position: absolute;
+    //       bottom: -3.125rem;
+    //       border-radius: 1.25rem;
+    //       opacity: 0.8;
+    //       // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    //       background-size: contain;
+    //       background-repeat: no-repeat;
+    //       filter: blur(20px);
+    //       // animation: rotation 5s infinite linear;
+    //     }
+
+    //     &:nth-child(1) {
+    //       left: 0;
+    //       top: 51px;
+
+    //       &::after {
+    //         width: 23.125rem;
+    //         height: 16.875rem;
+    //         background: url('/images/singers/blur-1.png');
+    //         animation: rotation1 2s infinite linear;
+    //       }
+    //     }
+
+    //     &:nth-child(2) {
+    //       right: 0;
+    //       top: 0;
+
+    //       &::after {
+    //         width: 16.875rem;
+    //         height: 18.75rem;
+    //         background: url('/images/singers/blur-2.png');
+    //         animation: rotation2 3s infinite linear;
+    //       }
+    //     }
+
+    //     &:nth-child(3) {
+    //       left: 0;
+    //       bottom: 40px;
+
+    //       &::after {
+    //         width: 16.875rem;
+    //         height: 18.75rem;
+    //         background: url('/images/singers/blur-3.png');
+    //         animation: rotation3 3s infinite linear;
+    //       }
+    //     }
+
+    //     &:nth-child(4) {
+    //       right: 0;
+    //       bottom: 91px;
+
+    //       &::after {
+    //         width: 23.125rem;
+    //         height: 16.875rem;
+    //         background: url('/images/singers/blur-4.png');
+    //         animation: rotation4 2s infinite linear;
+    //       }
+    //     }
+    //   }
+  }
+}
+
+// @media (max-width: 60rem) {
+//   .container {
+//     margin-top: -10rem;
+//     margin-bottom: 10rem;
+
+//     flex-direction: column-reverse;
+//   }
+// }
+
+// @media (max-width: 30rem) {
+//   .container {
+//     margin-top: -8rem;
+//     margin-bottom: 5rem;
+//     gap: 2rem;
+//   }
+
+//   .content {
+//     margin-top: -10rem;
+//   }
+// }
+
+//media 1170px
+
+// @keyframes rotation {
+//   0% {
+//     transform: rotate(0deg) translateX(100px) rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg) translateX(100px) rotate(-360deg);
+//   }
+// }
+*/
+
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0deg) translateX(18px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(18px) rotate(-360deg);
+  }
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0deg) translateX(12px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(12px) rotate(-360deg);
+  }
+}
+
+@keyframes rotation3 {
+  0% {
+    transform: rotate(0deg) translateX(13px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(13px) rotate(360deg);
+  }
+}
+
+@keyframes rotation4 {
+  0% {
+    transform: rotate(0deg) translateX(14px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(14px) rotate(-360deg);
   }
 }

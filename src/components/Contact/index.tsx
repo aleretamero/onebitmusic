@@ -1,13 +1,14 @@
 import styles from './styles.module.scss';
-import { Button } from '../Button';
+
 import { Title } from '../Title';
+import { Form } from './Form';
 
 import { IconEnvelope } from '../Icons/IconEnvelope';
 import { IconPhone } from '../Icons/IconPhone';
 
 export const Contact = () => {
   return (
-    <div className={styles.container} id='contact'>
+    <div className={styles.container} id="contact">
       <aside className={styles.contact}>
         <Title style={{ color: '#fefefe', textAlign: 'start' }}>
           Nos contate
@@ -25,23 +26,7 @@ export const Contact = () => {
       </aside>
       <section className={styles.containerForm}>
         <h3>Preencha com seus dados</h3>
-        <form className={styles.form}>
-          <label>
-            <span>Nome</span>
-            <input type="text" />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" />
-          </label>
-          <label>
-            <span>Mensagem</span>
-            <textarea />
-          </label>
-          <Button type="submit" color="red">
-            Enviar
-          </Button>
-        </form>
+        <Form />
       </section>
     </div>
   );
