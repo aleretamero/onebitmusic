@@ -52,15 +52,29 @@
   background-color: rgba(34, 34, 34, 0.03);
   position: relative;
 
+  @media (max-width: 90rem) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media (max-width: 85.125rem) {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   &::after {
     content: '';
     background-image: url('/images/shape/shape-2.svg');
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
-    right: 56px;
+    right: 3.5rem;
     width: 4.5rem;
     height: 3rem;
+
+    @media (max-width: 36rem) {
+      right: 2rem;
+    }
   }
 
   h3 {
@@ -72,7 +86,7 @@
   }
 }
 
-@media (max-width: 90rem) {
+@media (max-width: 75rem) {
   .container {
     flex-direction: column-reverse;
   }
@@ -96,5 +110,9 @@
 
   .containerForm {
     padding: 8.69rem 1rem;
+
+    &::after {
+      right: 1rem;
+    }
   }
 }

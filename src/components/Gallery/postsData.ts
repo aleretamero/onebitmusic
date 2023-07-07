@@ -1,6 +1,7 @@
 export type TypePost = {
   src: string;
   likes: number;
+  isLiked: boolean;
   comments: number;
   title: string;
   description: string;
@@ -10,6 +11,7 @@ export const postsData: TypePost[] = [
   {
     src: '/images/posts/Img-1.svg',
     likes: 80,
+    isLiked: false,
     comments: 11,
     title: 'Explorando Novos Horizontes Musicais',
     description:
@@ -18,6 +20,7 @@ export const postsData: TypePost[] = [
   {
     src: '/images/posts/Img-5.svg',
     likes: 321,
+    isLiked: false,
     comments: 140,
     title: 'Vibrações Eletrizantes na OneBitMusic',
     description:
@@ -26,6 +29,7 @@ export const postsData: TypePost[] = [
   {
     src: '/images/posts/Img-2.svg',
     likes: 1029,
+    isLiked: false,
     comments: 29,
     title: 'Noite Inesquecível com OneBitMusic',
     description:
@@ -34,6 +38,7 @@ export const postsData: TypePost[] = [
   {
     src: '/images/posts/Img-3.svg',
     likes: 103,
+    isLiked: false,
     comments: 12,
     title: 'A Magia da Música em Realidade Virtual',
     description:
@@ -42,6 +47,7 @@ export const postsData: TypePost[] = [
   {
     src: '/images/posts/Img-4.svg',
     likes: 78,
+    isLiked: false,
     comments: 19,
     title: 'Momentos Inesquecíveis na OneBitMusic',
     description:

@@ -11,7 +11,8 @@ import { postsData, TypePost } from '../postsData';
 
 export const Carousel = () => {
   const [posts, setPosts] = useState<TypePost[]>(postsData);
-  const [activePosts, setActivePosts] = useState<number[]>([]);
+
+  const [activePosts, setActivePosts] = useState<number[] | null>(null);
   const windowWidth = useMedia('(max-width: 64rem)');
 
   useEffect(() => {
@@ -24,6 +25,27 @@ export const Carousel = () => {
       });
     }
   }, [posts, windowWidth]);
+
+  useEffect(() => {
+    const storageValue = localStorage.getItem('@onebitmusic-posts');
+
+    if (!storageValue) {
+      setPosts(postsData);
+      return;
+    }
+
+    setPosts(JSON.parse(storageValue));
+  }, []);
+
+  const handleChangeLike = (title: string) => {
+    const updatedPosts = [...posts];
+
+    const indexPost = updatedPosts.findIndex((value) => value.title === title);
+    updatedPosts[indexPost].isLiked = !updatedPosts[indexPost].isLiked;
+
+    localStorage.setItem('@onebitmusic-posts', JSON.stringify(posts));
+    setPosts(updatedPosts);
+  };
 
   const handlePrevPost = () => {
     setPosts((currentPosts) => {
@@ -48,6 +70,7 @@ export const Carousel = () => {
         <Post
           key={post.title}
           post={post}
+          onClick={handleChangeLike}
           active={activePosts?.includes(index)}
         />
       ))}

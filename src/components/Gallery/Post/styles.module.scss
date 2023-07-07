@@ -4,11 +4,11 @@
   flex-direction: column;
   gap: 0.5rem;
   opacity: 0.3;
-  
+
   &.active {
     opacity: initial;
   }
-  
+
   & img {
     margin-bottom: 1rem;
     width: 23.125rem;
@@ -39,11 +39,21 @@
   align-items: center;
 }
 
+.iconLike {
+  cursor: pointer;
+  transition: 0.3s;
+
+  &.liked {
+    transform: scale(1.15);
+  }
+}
+
 .likes,
 .comments {
+  width: 5.85rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
 
   svg {

@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Title } from '../Title';
 import { Artist } from './Artist';
 import { Status } from './Status';
