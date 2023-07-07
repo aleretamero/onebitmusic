@@ -8,6 +8,11 @@
   left: 50%;
   transform: translateX(-50%);
 
+  & img {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
   & strong {
     font-size: 1.25rem;
     font-weight: 800;
