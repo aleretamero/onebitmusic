@@ -16,7 +16,10 @@ export const Meta = () => {
       limites físicos e levam você a novos patamares de entretenimento
       musical."
       />
-      <meta property="og:image" content="/images/hero.webp" />
+      <meta
+        property="og:image"
+        content="https://onebitmusic-ten.vercel.app/images/hero.webp"
+      />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -35,7 +38,7 @@ export const Meta = () => {
       />
       <meta
         property="twitter:image"
-        content="/images/hero.webp"
+        content="https://onebitmusic-ten.vercel.app/images/hero.webp"
       />
     </>
   );
