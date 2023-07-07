@@ -8,7 +8,6 @@
 }
 
 .containerImages {
-  // max-width: 33.125;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -45,20 +44,10 @@
   }
 }
 
-// @media (max-width: 80.625rem) {
-//   .container {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .content {
-//     max-width: 41.875rem;
-//   }
-// }
-
 @media (max-width: 68.75rem) {
   .container {
     flex-direction: column-reverse;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
   }
   .containerImages {
     max-width: calc(100% - 4.18rem);
@@ -73,6 +62,7 @@
 
 @media (max-width: 30rem) {
   .container {
+    margin-bottom: 0rem;
     margin-top: 5rem;
   }
 

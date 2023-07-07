@@ -20,6 +20,7 @@
 }
 
 .contentImage {
+  z-index: 1;
   position: relative;
 
   & img {
@@ -34,17 +35,13 @@
     position: absolute;
     bottom: -2rem;
     border-radius: 5rem;
-    opacity: 0.7;
-    opacity: 0.9;
     background-size: contain;
     background-repeat: no-repeat;
     filter: blur(1rem);
-    transform: translate(3rem);
   }
 }
 
 .content1 {
-  transform: translateY(0);
   &::before {
     background: url('/images/singers/blur-1.png');
     animation: rotation 2.5s infinite linear;
@@ -52,7 +49,6 @@
 }
 
 .content2 {
-  transform: translateY(0);
   margin-top: -3.19rem;
 
   &::before {
@@ -71,7 +67,6 @@
 }
 
 .content4 {
-  transform: translateY(0);
   &::before {
     background: url('/images/singers/blur-4.png');
     animation: rotation 2.5s infinite linear;

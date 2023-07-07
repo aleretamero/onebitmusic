@@ -12,7 +12,7 @@ import { Button } from '../Button';
 export const Header = () => {
   const [isScrollAtTop, setIsScrollAtTop] = useState(true);
   const [mobileMenu, setMobileMenu] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   const mobile = useMedia('(max-width: 64rem)');
 
@@ -62,19 +62,43 @@ export const Header = () => {
             mobileMenu && mobile ? styles.active : ''
           }`}
         >
-          <Link href="#hero" className={styles.link}>
+          <Link
+            href="#hero"
+            className={styles.link}
+            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+          >
             INICIO
           </Link>
-          <Link href="#singers" className={styles.link}>
+          <Link
+            href="#singers"
+            className={styles.link}
+            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+          >
             ARTISTAS
           </Link>
-          <Link href="#event-schedule" className={styles.link}>
+          <Link
+            href="#event-schedule"
+            className={styles.link}
+            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+          >
             PROGRAMAÇÃO
           </Link>
-          <Link href="#contact" className={styles.link}>
+          <Link
+            href="#contact"
+            className={styles.link}
+            onClick={() => setMobileMenu((currentValue) => !currentValue)}
+          >
             CONTATO
           </Link>
-          <Button color="light" onClick={() => router.push('#pricing')}>COMPRAR INGRESSOS</Button>
+          <Button
+            color="light"
+            onClick={() => {
+              router.push('#pricing');
+              setMobileMenu((currentValue) => !currentValue);
+            }}
+          >
+            COMPRAR INGRESSOS
+          </Button>
         </nav>
       )}
     </header>
