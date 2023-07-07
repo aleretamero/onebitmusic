@@ -45,4 +45,9 @@
   &:hover svg {
     transform: translateX(0.3rem);
   }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
 }

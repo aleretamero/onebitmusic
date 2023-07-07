@@ -21,6 +21,7 @@ export const About = () => {
           alt="ImageShows"
           width={480}
           height={480}
+          quality={100}
           onClick={() => setImageBlur('image2')}
           style={imageBlur === 'image1' ? { zIndex: 0, opacity: '30%' } : {}}
         />
@@ -29,6 +30,7 @@ export const About = () => {
           alt="ImageShows"
           width={480}
           height={480}
+          quality={100}
           onClick={() => setImageBlur('image1')}
           style={imageBlur === 'image2' ? { zIndex: 0, opacity: '30%' } : {}}
         />

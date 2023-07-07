@@ -56,8 +56,15 @@
   align-items: center;
   gap: 2.5rem;
 
-  & a {
+  & .link {
     text-transform: uppercase;
+    transition: 0.2s;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      color: var(--red-600);
+    }
   }
 
   & a:last-child {

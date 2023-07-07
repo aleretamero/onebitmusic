@@ -9,6 +9,8 @@ import { useMedia } from '@/hooks/useMedia';
 import { Logo } from '../Logo';
 import { Button } from '../Button';
 
+import { linksData } from './linksData';
+
 export const Header = () => {
   const [isScrollAtTop, setIsScrollAtTop] = useState(true);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -62,34 +64,16 @@ export const Header = () => {
             mobileMenu && mobile ? styles.active : ''
           }`}
         >
-          <Link
-            href="#hero"
-            className={styles.link}
-            onClick={() => mobile && setMobileMenu(false)}
-          >
-            INICIO
-          </Link>
-          <Link
-            href="#singers"
-            className={styles.link}
-            onClick={() => mobile && setMobileMenu(false)}
-          >
-            ARTISTAS
-          </Link>
-          <Link
-            href="#event-schedule"
-            className={styles.link}
-            onClick={() => mobile && setMobileMenu(false)}
-          >
-            PROGRAMAÇÃO
-          </Link>
-          <Link
-            href="#contact"
-            className={styles.link}
-            onClick={() => mobile && setMobileMenu(false)}
-          >
-            CONTATO
-          </Link>
+          {linksData.map((link) => (
+            <Link
+              key={link.text}
+              href={link.href}
+              className={styles.link}
+              onClick={() => mobile && setMobileMenu(false)}
+            >
+              {link.text}
+            </Link>
+          ))}
           <Button
             color="light"
             onClick={() => {
