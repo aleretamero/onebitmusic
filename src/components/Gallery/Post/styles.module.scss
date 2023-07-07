@@ -42,10 +42,6 @@
 .iconLike {
   cursor: pointer;
   transition: 0.3s;
-
-  &.liked {
-    transform: scale(1.15);
-  }
 }
 
 .likes,

@@ -25,16 +25,17 @@
   gap: 1.88;
   width: 210px;
 
+  & a:hover path,
+  & a:focus path {
+    fill: var(--red-600);
+  }
+
   & svg {
     width: 1.875rem;
     height: 1.875rem;
 
     & path {
       transition: 0.2s;
-    }
-
-    &:hover path {
-      fill: var(--red-600);
     }
   }
 }

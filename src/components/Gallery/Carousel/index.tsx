@@ -29,12 +29,9 @@ export const Carousel = () => {
   useEffect(() => {
     const storageValue = localStorage.getItem('@onebitmusic-posts');
 
-    if (!storageValue) {
-      setPosts(postsData);
-      return;
+    if (storageValue) {
+      setPosts(JSON.parse(storageValue));
     }
-
-    setPosts(JSON.parse(storageValue));
   }, []);
 
   const handleChangeLike = (title: string) => {
@@ -43,7 +40,7 @@ export const Carousel = () => {
     const indexPost = updatedPosts.findIndex((value) => value.title === title);
     updatedPosts[indexPost].isLiked = !updatedPosts[indexPost].isLiked;
 
-    localStorage.setItem('@onebitmusic-posts', JSON.stringify(posts));
+    localStorage.setItem('@onebitmusic-posts', JSON.stringify(updatedPosts));
     setPosts(updatedPosts);
   };
 

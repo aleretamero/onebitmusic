@@ -13,8 +13,8 @@ interface BottonProps extends ComponentPropsWithRef<'button'> {
 export const Button = ({ children, color, arrow, ...props }: BottonProps) => {
   return (
     <button className={`${styles.button} ${styles[color]}`} {...props}>
-      {children}
-      {arrow ? <IconArrow /> : null}
+      <span>{children}</span>
+      <span>{arrow ? <IconArrow /> : null}</span>
     </button>
   );
 };

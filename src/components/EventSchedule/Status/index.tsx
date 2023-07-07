@@ -24,6 +24,8 @@ interface iProps {
 }
 
 export const Status = (props: iProps) => {
+  const StatusImage = status[props.status].Image;
+
   return (
     <div className={styles.container}>
       <span
@@ -33,7 +35,11 @@ export const Status = (props: iProps) => {
       >
         {status[props.status].name}
       </span>
-      {/* <>{status[props.status].Image}</> */}
+      <StatusImage
+        width="1.5rem"
+        height="1.5rem"
+        // styles={{ width: '1.5rem !important', height: '1.5rem !important' }}
+      />
       {/* <status[props.status].Image /> */}
 
       {/* <Image

@@ -1,12 +1,12 @@
 export const IconPlay = ({ ...props }) => {
   return (
     <svg
-      {...props}
       width="56"
       height="56"
       viewBox="0 0 57 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g clipPath="url(#clip0_893_173)">
         <path

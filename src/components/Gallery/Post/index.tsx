@@ -25,10 +25,7 @@ export const Post = ({ post, active, onClick }: PostProps) => {
               className={`${styles.iconLike} ${styles.liked}`}
             />
           ) : (
-            <IconHeart
-              onClick={() => onClick(post.title)}
-              className={styles.iconLike}
-            />
+            <IconHeart onClick={() => onClick(post.title)} />
           )}
           <span>{post.isLiked ? post.likes + 1 : post.likes}</span>
         </div>

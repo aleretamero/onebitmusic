@@ -23,6 +23,9 @@ export const useForm = (type: keyof typeof typesValidate) => {
   const validate = (value: string) => {
     if (typesValidate[type] && !typesValidate[type].regex.test(value)) {
       setError(typesValidate[type].message);
+      setTimeout(() => {
+        setError(null);
+      }, 5000);
       return false;
     }
     setError(null);
