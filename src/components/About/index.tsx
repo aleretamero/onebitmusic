@@ -2,15 +2,36 @@ import styles from './styles.module.scss';
 
 import Image from 'next/image';
 
-import imageShows from '@/assets/shows-about.png';
+import { useState } from 'react';
+
 import { Title } from '../Title';
 import { Button } from '../Button';
 
+import imageAbout1 from '../../../public/images/about/about-1.png';
+import imageAbout2 from '../../../public/images/about/about-2.png';
+
 export const About = () => {
+  const [imageBlur, setImageBlur] = useState('image2');
+
   return (
     <section className={`${styles.container} limitedSection`}>
-      <div className={styles.image}>
-        <Image src={imageShows} alt="ImageShows" width={530} height={530} />
+      <div className={styles.containerImages}>
+        <Image
+          src={imageAbout1}
+          alt="ImageShows"
+          width={480}
+          height={480}
+          onClick={() => setImageBlur('image2')}
+          style={imageBlur === 'image1' ? { zIndex: 0, opacity: '30%' } : {}}
+        />
+        <Image
+          src={imageAbout2}
+          alt="ImageShows"
+          width={480}
+          height={480}
+          onClick={() => setImageBlur('image1')}
+          style={imageBlur === 'image2' ? { zIndex: 0, opacity: '30%' } : {}}
+        />
       </div>
 
       <div className={styles.content}>

@@ -1,4 +1,5 @@
 .container {
+  padding-top: 8rem;
   display: grid;
   grid-template-columns: 1fr 41.875rem;
   place-items: center;
@@ -87,7 +88,7 @@
   }
 }
 
-@media (max-width: 80.625rem) {
+@media (max-width: 68.75rem) {
   .container {
     grid-template-columns: 1fr;
   }
