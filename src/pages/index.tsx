@@ -17,6 +17,18 @@ export default function Home() {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="title"
+          content="Onebitmusic - Especialistas em eventos músicais"
+        />
+        <meta
+          name="description"
+          content=" Na onebitmusic, estamos redefinindo a maneira como experimentamos e
+          nos envolvemos com a música, utilizando tecnologia de realidade
+          virtual (VR) para criar shows e performances que transcendem os
+          limites físicos e levam você a novos patamares de entretenimento
+          musical."
+        />
         <link rel="icon" href="/logo.svg" />
         <title>Onebitmusic - Especialistas em eventos músicais</title>
       </Head>
