@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 import { ComponentPropsWithRef, ReactNode } from 'react';
 
-import { HiArrowRight } from 'react-icons/hi';
+import { IconArrow } from '../Icons/IconArrow';
 
 interface BottonProps extends ComponentPropsWithRef<'button'> {
   children: ReactNode;
@@ -14,7 +14,7 @@ export const Button = ({ children, color, arrow, ...props }: BottonProps) => {
   return (
     <button className={`${styles.button} ${styles[color]}`} {...props}>
       {children}
-      {arrow ? <HiArrowRight /> : null}
+      {arrow ? <IconArrow /> : null}
     </button>
   );
 };

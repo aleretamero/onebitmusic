@@ -3,13 +3,14 @@ import styles from './styles.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import play from '@/assets/Play.svg';
+// import play from '@/assets/Play.svg';
+import { IconPlay } from '../Icons/IconPlay';
 import { Timer } from './Timer';
 import { Button } from '../Button';
 
 export const Hero = () => {
   return (
-    <section className={`${styles.container} limitedSection`} id='hero'>
+    <section className={`${styles.container} limitedSection`} id="hero">
       <div className={styles.content}>
         <strong>A sua melhor Experiencia </strong>
         <h1>Musical Digital</h1>
@@ -22,7 +23,8 @@ export const Hero = () => {
         <div className={styles.actions}>
           <Button color="red">Começar</Button>
           <Link href="">
-            <Image src={play} alt="play" width={56} height={56} />
+            <IconPlay />
+            {/* <Image src={play} alt="play" width={56} height={56} /> */}
             <span>Assistir Vídeo</span>
           </Link>
         </div>

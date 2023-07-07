@@ -1,23 +1,21 @@
 import styles from './styles.module.scss';
 
-import Image from 'next/image';
-
-import play from '@/assets/play-circle.svg';
-import cam from '@/assets/cam.svg';
-import clock from '@/assets/clock.svg';
+import { IconPlay } from '@/components/Icons/IconPlay';
+import { IconCam } from '@/components/Icons/IconCam';
+import { IconClock } from '@/components/Icons/IconClock';
 
 const status = {
   previa: {
     name: 'Prévia',
-    image: play,
+    Image: IconPlay,
   },
   online: {
     name: 'AO VIVO',
-    image: cam,
+    Image: IconCam,
   },
   'coming-soon': {
     name: 'Em breve',
-    image: clock,
+    Image: IconClock,
   },
 };
 
@@ -35,12 +33,15 @@ export const Status = (props: iProps) => {
       >
         {status[props.status].name}
       </span>
-      <Image
+      {/* <>{status[props.status].Image}</> */}
+      {/* <status[props.status].Image /> */}
+
+      {/* <Image
         src={status[props.status].image}
         alt={status[props.status].name}
         width={24}
         height={24}
-      />
+      /> */}
     </div>
   );
 };
