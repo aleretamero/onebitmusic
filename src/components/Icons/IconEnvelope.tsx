@@ -1,6 +1,7 @@
-export const IconEnvelope = () => {
+export const IconEnvelope = ({ ...props }) => {
   return (
     <svg
+      {...props}
       width="24"
       height="24"
       viewBox="0 0 20 18"

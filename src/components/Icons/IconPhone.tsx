@@ -1,8 +1,7 @@
-import React from 'react';
-
-export const IconPhone = () => {
+export const IconPhone = ({ ...props }) => {
   return (
     <svg
+      {...props}
       width="24"
       height="24"
       viewBox="0 0 18 18"

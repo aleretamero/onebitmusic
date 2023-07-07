@@ -1,6 +1,7 @@
-export const IconFacebook = () => {
+export const IconFacebook = ({ ...props }) => {
   return (
     <svg
+      {...props}
       width="14"
       height="26"
       viewBox="0 0 14 26"

@@ -1,6 +1,7 @@
-export const IconHeart = () => {
+export const IconHeart = ({ ...props }) => {
   return (
     <svg
+      {...props}
       width="22"
       height="21"
       viewBox="0 0 22 21"
