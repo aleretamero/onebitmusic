@@ -23,10 +23,12 @@
     z-index: 1;
     height: fit-content;
     width: fit-content;
+    border-radius: 1.5rem;
 
     &.imageBlur {
       z-index: 0;
       opacity: 30%;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       cursor: pointer;
     }
   }

@@ -30,12 +30,7 @@ const calculateTimeLeft = () => {
 };
 
 export const Timer = () => {
-  const [timeLeft, setTimeLeft] = useState<TypeTimeLeft>({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const [timeLeft, setTimeLeft] = useState<TypeTimeLeft | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,16 +41,11 @@ export const Timer = () => {
   }, [timeLeft]);
 
   return (
-    <div
-      className={styles.timer}
-      data-aos="zoom-in-up"
-      data-aos-duration="500"
-      data-aos-delay="1000"
-    >
-      <span>{timeLeft.days}d</span>
-      <span>{timeLeft.hours}h</span>
-      <span>{timeLeft.minutes}m</span>
-      <span>{timeLeft.seconds}s</span>
+    <div className={`${styles.timer} ${timeLeft ? '' : styles.hidden}`}>
+      <span>{timeLeft && timeLeft.days}d</span>
+      <span>{timeLeft && timeLeft.hours}h</span>
+      <span>{timeLeft && timeLeft.minutes}m</span>
+      <span>{timeLeft && timeLeft.seconds}s</span>
     </div>
   );
 };

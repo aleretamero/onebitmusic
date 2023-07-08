@@ -33,10 +33,9 @@ export const Carousel = () => {
       {currentReports.map((item, index) => (
         <div
           key={item.profileName}
-          onClick={() => handleReports(index)}
           className={index !== 1 ? styles.sideReport : styles.emphasisReport}
         >
-          <Report report={item} />
+          <Report report={item} onClick={() => handleReports(index)} index={index} />
         </div>
       ))}
     </div>

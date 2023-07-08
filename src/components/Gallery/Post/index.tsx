@@ -28,6 +28,7 @@ export const Post = ({ post, active, onClick, setActivePost }: PostProps) => {
         width={370}
         height={370}
         quality={100}
+        style={{objectFit: 'cover'}}
       />
       <div className={styles.ratings}>
         <div className={styles.likes}>

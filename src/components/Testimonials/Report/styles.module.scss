@@ -8,6 +8,43 @@
   padding: 1.25rem 1.88rem;
   background-color: rgba(34, 34, 34, 0.1);
 
+  &.left,
+  &.right {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      top: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: none;
+
+      @media (max-width: 57.5rem) {
+        display: block;
+      }
+    }
+  }
+
+  &.left {
+    &::before {
+      right: 0;
+      background-image: url(/images/angles-right-solid.svg);
+      transform: translateY(-50%);
+    }
+  }
+
+  &.right {
+    &::before {
+      left: 0;
+      background-image: url(/images/angles-left-solid.svg);
+      transform: translateY(-50%);
+    }
+  }
+
   & p {
     padding: 0 1.88rem;
     text-align: center;
