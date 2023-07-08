@@ -3,7 +3,7 @@ import { useState } from 'react';
 const typesValidate = {
   name: {
     regex: /^.+$/,
-    message: 'Preencha um nome',
+    message: 'O campo não pode estar vazio',
   },
   email: {
     regex:
@@ -12,7 +12,7 @@ const typesValidate = {
   },
   message: {
     regex: /^.+$/,
-    message: 'Preencha uma mensagem',
+    message: 'O campo não pode estar vazio',
   },
 };
 
@@ -25,7 +25,7 @@ export const useForm = (type: keyof typeof typesValidate) => {
       setError(typesValidate[type].message);
       setTimeout(() => {
         setError(null);
-      }, 5000);
+      }, 10 * 1000);
       return false;
     }
     setError(null);

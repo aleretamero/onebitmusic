@@ -9,6 +9,24 @@ export type TypePost = {
 
 export const postsData: TypePost[] = [
   {
+    src: '/images/posts/Img-8.jpeg',
+    likes: 189,
+    isLiked: false,
+    comments: 36,
+    title: 'Experiência Imersiva na OneBitMusic',
+    description:
+      'Uma foto que captura a experiência imersiva que vivenciamos nos shows da #OneBitMusic. Mergulhe em um mundo de sons e visuais deslumbrantes que irão cativar seus sentidos. Junte-se a nós nessa jornada musical inesquecível!',
+  },
+  {
+    src: '/images/posts/Img-9.webp',
+    likes: 55,
+    isLiked: false,
+    comments: 7,
+    title: 'Aprecie a Música de Forma Diferente',
+    description:
+      'Essa imagem inspiradora representa a maneira única de apreciar a música por meio dos shows da #OneBitMusic. Descubra novas formas de se conectar com a arte sonora e compartilhe seus momentos musicais favoritos conosco!',
+  },
+  {
     src: '/images/posts/Img-1.svg',
     likes: 80,
     isLiked: false,
@@ -52,5 +70,23 @@ export const postsData: TypePost[] = [
     title: 'Momentos Inesquecíveis na OneBitMusic',
     description:
       'Essa imagem representa a alegria e a emoção que experimentamos nos shows da #OneBitMusic. A música nos conecta, nos inspira e nos proporciona momentos inesquecíveis. Compartilhe suas fotos conosco e faça parte dessa galeria de momentos especiais!',
+  },
+  {
+    src: '/images/posts/Img-6.jpg',
+    likes: 275,
+    isLiked: false,
+    comments: 52,
+    title: 'Celebração Musical no Mundo Virtual',
+    description:
+      'Uma foto que captura a celebração musical que ocorreu no mundo virtual da #OneBitMusic. Junte-se a nós e explore os ritmos cativantes e as paisagens sonoras incríveis. Compartilhe sua experiência musical conosco!',
+  },
+  {
+    src: '/images/posts/Img-7.jpg',
+    likes: 412,
+    isLiked: false,
+    comments: 89,
+    title: 'Conectando-se com a Música Digitalmente',
+    description:
+      'Essa imagem representa a conexão profunda que temos com a música quando nos envolvemos com a #OneBitMusic digitalmente. Explore novos gêneros, descubra artistas talentosos e compartilhe suas músicas favoritas com outros fãs!',
   },
 ];

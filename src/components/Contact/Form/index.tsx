@@ -34,7 +34,7 @@ export const Form = () => {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
       <Input
         label="Nome"
         type="text"
