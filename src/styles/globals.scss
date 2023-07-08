@@ -36,6 +36,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 input,
 textarea,
 select,

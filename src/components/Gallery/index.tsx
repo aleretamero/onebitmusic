@@ -6,7 +6,7 @@ export const Gallery = () => {
   return (
     <section className={styles.container}>
       <div className="limitedSection">
-        <Title>Galeria de Momentos Compartilhados</Title>
+        <Title data-aos="fade-up">Galeria de Momentos Compartilhados</Title>
       </div>
       <Carousel />
     </section>

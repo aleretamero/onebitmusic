@@ -15,7 +15,7 @@ export const About = () => {
 
   return (
     <section className={`${styles.container} limitedSection`}>
-      <div className={styles.containerImages}>
+      <div className={styles.containerImages} data-aos="fade-down-right">
         <Image
           src={imageAbout1}
           alt="ImageShows"
@@ -36,8 +36,10 @@ export const About = () => {
         />
       </div>
 
-      <div className={styles.content}>
-        <Title style={{ textAlign: 'start' }}>Sobre a gente</Title>
+      <div className={styles.content} data-aos="fade-down-left">
+        <Title style={{ textAlign: 'start' }} data-aos="fade-down-left">
+          Sobre a gente
+        </Title>
         <p>
           Na onebitmusic, estamos redefinindo a maneira como experimentamos e
           nos envolvemos com a música, utilizando tecnologia de realidade
@@ -45,7 +47,7 @@ export const About = () => {
           limites físicos e levam você a novos patamares de entretenimento
           musical.
         </p>
-        <Button color="light" arrow={true}>
+        <Button color="light" arrow={true} data-aos="fade-down-left">
           Ler mais
         </Button>
       </div>

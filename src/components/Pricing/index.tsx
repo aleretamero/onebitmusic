@@ -7,12 +7,14 @@ import { plans } from './plansData';
 export const Pricing = () => {
   return (
     <section className={`${styles.container} limitedSection`} id="pricing">
-      <Title>Escolha o tipo de ingresso</Title>
+      <Title data-aos="fade-up">Escolha o tipo de ingresso</Title>
       <div className={styles.cards}>
-        {plans.map((plan) => (
+        {plans.map((plan, index) => (
           <div
             className={`${styles.card} ${styles[plan.type]}`}
             key={plan.plan}
+            data-aos="fade-up"
+            data-aos-duration={350 * (index + 1)}
           >
             <h3>{plan.plan}</h3>
             <strong>R${plan.price}</strong>

@@ -8,11 +8,15 @@ import { sponsors } from './sponsorsData';
 export const Sponsors = () => {
   return (
     <section className={`${styles.container} limitedSection`}>
-      <Title>Nossos investidores</Title>
+      <Title data-aos="fade-up">Nossos investidores</Title>
 
       <div className={styles.content}>
-        {sponsors.map((item) => (
-          <div key={item.name}>
+        {sponsors.map((item, index) => (
+          <div
+            key={item.name}
+            data-aos="zoom-in"
+            data-aos-duration={200 * (index + 0.5)}
+          >
             <Image
               src={item.image}
               alt={item.name}
@@ -23,7 +27,9 @@ export const Sponsors = () => {
         ))}
       </div>
 
-      <Button color="light">Se torne um Investidor</Button>
+      <Button color="light" data-aos="fade-up">
+        Se torne um Investidor
+      </Button>
     </section>
   );
 };

@@ -20,7 +20,9 @@ export const EventSchedule = () => {
       className={`${styles.container} limitedSection`}
       id="event-schedule"
     >
-      <Title style={{ textAlign: 'start' }}>Nossa Programação</Title>
+      <Title style={{ textAlign: 'start' }} data-aos="fade-up">
+        Nossa Programação
+      </Title>
 
       <ul className={styles.listDays}>
         <li
@@ -28,6 +30,8 @@ export const EventSchedule = () => {
             activeDay === 'day1' ? styles.active : ''
           }`}
           onClick={() => handleClick('day1')}
+          data-aos="fade-up"
+          data-aos-duration="300"
         >
           <strong>Dia 1</strong>
           <span>23 Setembro</span>
@@ -37,6 +41,8 @@ export const EventSchedule = () => {
             activeDay === 'day2' ? styles.active : ''
           }`}
           onClick={() => handleClick('day2')}
+          data-aos="fade-up"
+          data-aos-duration="600"
         >
           <strong>Dia 2</strong>
           <span>24 Setembro</span>
@@ -46,13 +52,15 @@ export const EventSchedule = () => {
             activeDay === 'day3' ? styles.active : ''
           }`}
           onClick={() => handleClick('day3')}
+          data-aos="fade-up"
+          data-aos-duration="900"
         >
           <strong>Dia 3</strong>
           <span>25 Setembro</span>
         </li>
       </ul>
 
-      <table className={styles.containerEventSchedule}>
+      <table className={styles.containerEventSchedule} data-aos="fade-up">
         <thead>
           <tr>
             <th>Hora</th>

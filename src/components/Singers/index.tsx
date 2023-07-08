@@ -13,8 +13,10 @@ import { Title } from '../Title';
 export const Singers = () => {
   return (
     <section className={`${styles.container} limitedSection`} id="singers">
-      <div className={styles.content}>
-        <Title style={{ textAlign: 'start' }}>Artistas</Title>
+      <div className={styles.content} data-aos="fade-up-right">
+        <Title style={{ textAlign: 'start' }} data-aos="fade-up-right">
+          Artistas
+        </Title>
         <p>
           No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma
           incrível variedade de artistas talentosos. Nossa seleção musical
@@ -26,13 +28,16 @@ export const Singers = () => {
           evento. Os artistas da OneBitMusic estão prontos para levar você a uma
           jornada musical única e inesquecível.
         </p>
-        <Button color="light" arrow={true}>
+        <Button color="light" arrow={true} data-aos="fade-up-right">
           Veja a lista completa
         </Button>
       </div>
       <div className={styles.containerImages}>
         <div className={styles.row}>
-          <div className={`${styles.contentImage} ${styles.content1}`}>
+          <div
+            className={`${styles.contentImage} ${styles.content1}`}
+            data-aos="zoom-in"
+          >
             <Image
               src={singer1}
               alt="singer"
@@ -41,7 +46,10 @@ export const Singers = () => {
               quality={100}
             />
           </div>
-          <div className={`${styles.contentImage} ${styles.content2}`}>
+          <div
+            className={`${styles.contentImage} ${styles.content2}`}
+            data-aos="zoom-in"
+          >
             <Image
               src={singer2}
               alt="singer"
@@ -52,7 +60,10 @@ export const Singers = () => {
           </div>
         </div>
         <div className={styles.row}>
-          <div className={`${styles.contentImage} ${styles.content3}`}>
+          <div
+            className={`${styles.contentImage} ${styles.content3}`}
+            data-aos="zoom-in"
+          >
             <Image
               src={singer3}
               alt="singer"
@@ -61,7 +72,10 @@ export const Singers = () => {
               quality={100}
             />
           </div>
-          <div className={`${styles.contentImage} ${styles.content4}`}>
+          <div
+            className={`${styles.contentImage} ${styles.content4}`}
+            data-aos="zoom-in"
+          >
             <Image
               src={singer4}
               alt="singer"
