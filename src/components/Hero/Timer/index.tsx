@@ -48,7 +48,7 @@ export const Timer = () => {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <div className={styles.timer}>
+    <div className={styles.timer} data-aos="fade-up" data-aos-duration="1000">
       <span>{days}d</span>
       <span>{hours}h</span>
       <span>{minutes}m</span>

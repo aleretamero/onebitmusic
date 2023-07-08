@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
       duration: 600,
-      offset: 200,
+      offset: 60,
       // once: true,
     });
   }, []);
