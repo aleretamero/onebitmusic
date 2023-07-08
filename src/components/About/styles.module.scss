@@ -4,30 +4,46 @@
   margin-bottom: 9.32rem;
   align-items: center;
   justify-content: center;
-  gap: 4.38rem;
+  gap: 8.36rem;
 }
 
 .containerImages {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  place-items: center;
-  transform: translate(1.5rem, 1.5rem);
+  position: relative;
 
+  & .contentImage1,
+  & .contentImage2 {
+    grid-area: 1/1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+
+    &.imageBlur {
+      z-index: 0;
+      opacity: 30%;
+    }
+  }
+
+  & .contentImage1 {
+    top: 4.38rem;
+    left: 4.38rem;
+  }
+
+  & .contentImage2 {
+    top: 0;
+    left: 0;
+  }
   & img {
     object-fit: contain;
-    grid-area: 1/1;
-    z-index: 1;
-    cursor: pointer;
     transition: 0.5s;
-
-    &:first-child {
-      transform: translate(2.19rem, 2.19rem);
-    }
-
-    &:last-child {
-      transform: translate(-2.19rem, -2.19rem);
-    }
+    height: fit-content;
   }
 }
 
@@ -51,8 +67,9 @@
     margin-bottom: 5rem;
   }
   .containerImages {
-    max-width: calc(100% - 4.18rem);
-    margin-right: 2.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 4.38rem;
     place-items: center;
   }
 
@@ -65,9 +82,5 @@
   .container {
     margin-bottom: 0rem;
     margin-top: 5rem;
-  }
-
-  .containerImages {
-    margin-top: -3rem;
   }
 }
