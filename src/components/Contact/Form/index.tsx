@@ -19,7 +19,11 @@ export const Form = () => {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
 
-    if (name.validate() && email.validate() && message.validate()) {
+    const nameValidate = name.validate();
+    const emailValidate = email.validate();
+    const messageValidate = message.validate();
+
+    if (nameValidate && emailValidate && messageValidate) {
       setLoading(true);
 
       setTimeout(() => {
