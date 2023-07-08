@@ -64,11 +64,12 @@
     &:hover,
     &:focus {
       color: var(--red-600);
+      text-shadow: 0 0 0.4rem var(--gray-600);
     }
   }
 
   & a:last-child {
-    margin-left: 0.625rem;
+    margin-left: 0.0625rem;
   }
 }
 

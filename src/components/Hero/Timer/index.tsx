@@ -45,14 +45,17 @@ export const Timer = () => {
     return () => clearTimeout(timer);
   }, [timeLeft]);
 
-  const { days, hours, minutes, seconds } = timeLeft;
-
   return (
-    <div className={styles.timer} data-aos="fade-up" data-aos-duration="1000">
-      <span>{days}d</span>
-      <span>{hours}h</span>
-      <span>{minutes}m</span>
-      <span>{seconds}s</span>
+    <div
+      className={styles.timer}
+      data-aos="zoom-in-up"
+      data-aos-duration="500"
+      data-aos-delay="1000"
+    >
+      <span>{timeLeft.days}d</span>
+      <span>{timeLeft.hours}h</span>
+      <span>{timeLeft.minutes}m</span>
+      <span>{timeLeft.seconds}s</span>
     </div>
   );
 };

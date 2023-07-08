@@ -75,9 +75,9 @@
   width: 100%;
   display: grid;
   border-radius: 1.5rem;
-  border: 1px solid var(--gray-200);
+  border: 0.0625rem solid var(--gray-200);
   margin-top: 2.5rem;
-  overflow-x: auto;
+  overflow-x: hidden;
 
   & thead tr:first-child {
     padding: 2.56rem;
@@ -104,7 +104,7 @@
   display: grid;
   grid-template-columns: 14.375rem 23.125rem 16.875rem 1fr;
   gap: 1.87rem;
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 0.0625rem solid var(--gray-200);
   color: var(--gray-500);
 
   &:last-child {
@@ -153,8 +153,9 @@
   }
 }
 
-@media (max-width: 74.375rem) {
+@media (max-width: 66.875rem) {
   .containerEventSchedule {
+    overflow-x: auto;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }

@@ -16,8 +16,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     border-radius: 50%;
     background-color: var(--gray-800);
     opacity: 0.8;
@@ -45,7 +45,7 @@
     color: var(--gray-800);
     background-color: var(--gray-100);
     border-radius: 0.3125rem;
-    border: 1px solid var(--gray-800);
+    border: 0.0625rem solid var(--gray-800);
 
     &:hover,
     &:focus {
@@ -57,7 +57,7 @@
     color: var(--red-600);
     background-color: var(--gray-100);
     border-radius: 0.3125rem;
-    border: 1px solid var(--red-600);
+    border: 0.0625rem solid var(--red-600);
 
     &:hover,
     &:focus {
