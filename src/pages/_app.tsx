@@ -11,9 +11,9 @@ import { useEffect } from 'react';
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
-      duration: 600,
-      offset: 60,
-      // once: true,
+      duration: 800,
+      offset: 10,
+      once: true,
     });
   }, []);
 

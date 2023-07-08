@@ -10,7 +10,7 @@ type TypeTimeLeft = {
 
 const calculateTimeLeft = () => {
   const difference =
-    Number(new Date('2023-07-09T23:59:00')) - Number(new Date());
+    Number(new Date('2023-07-11T23:59:00')) - Number(new Date());
 
   if (difference > 0) {
     return {

@@ -23,11 +23,11 @@
     z-index: 1;
     height: fit-content;
     width: fit-content;
-    cursor: pointer;
 
     &.imageBlur {
       z-index: 0;
       opacity: 30%;
+      cursor: pointer;
     }
   }
 

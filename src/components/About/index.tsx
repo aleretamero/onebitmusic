@@ -15,7 +15,7 @@ export const About = () => {
 
   return (
     <section className={`${styles.container} limitedSection`}>
-      <div className={styles.containerImages} data-aos="zoom-in">
+      <div className={styles.containerImages} data-aos="zoom-in-up">
         <div
           className={`${styles.contentImage1} ${
             imageBlur === 'image1' && styles.imageBlur

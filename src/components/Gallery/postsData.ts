@@ -9,7 +9,7 @@ export type TypePost = {
 
 export const postsData: TypePost[] = [
   {
-    src: '/images/posts/Img-8.jpeg',
+    src: '/images/posts/Img-8.jpg',
     likes: 189,
     isLiked: false,
     comments: 36,
@@ -18,7 +18,7 @@ export const postsData: TypePost[] = [
       'Uma foto que captura a experiência imersiva que vivenciamos nos shows da #OneBitMusic. Mergulhe em um mundo de sons e visuais deslumbrantes que irão cativar seus sentidos. Junte-se a nós nessa jornada musical inesquecível!',
   },
   {
-    src: '/images/posts/Img-9.webp',
+    src: '/images/posts/Img-9.jpg',
     likes: 55,
     isLiked: false,
     comments: 7,
