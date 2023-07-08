@@ -22,7 +22,13 @@ export const Post = ({ post, active, onClick, setActivePost }: PostProps) => {
       }`}
       onClick={setActivePost}
     >
-      <Image src={post.src} alt={post.title} width={370} height={370} />
+      <Image
+        src={post.src}
+        alt={post.title}
+        width={370}
+        height={370}
+        quality={100}
+      />
       <div className={styles.ratings}>
         <div className={styles.likes}>
           {post.isLiked ? (

@@ -22,8 +22,7 @@ export const Hero = () => {
         <div className={styles.actions}>
           <Button color="red">Começar</Button>
           <Link href="">
-            <IconPlay />
-            {/* <Image src={play} alt="play" width={56} height={56} /> */}
+            <IconPlay className={styles.iconPlay} />
             <span>Assistir Vídeo</span>
           </Link>
         </div>

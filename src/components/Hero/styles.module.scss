@@ -52,11 +52,21 @@
   gap: 2.5rem;
   flex-wrap: wrap;
 
-  & a:last-child {
+  & a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.125rem;
+
+    & span {
+      transition: 0.4s;
+    }
+
+    &:hover span,
+    &:focus span {
+      color: var(--red-600);
+      scale: 1.05;
+    }
 
     & span {
       display: flex;
