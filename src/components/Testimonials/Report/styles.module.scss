@@ -32,7 +32,7 @@
   &.left {
     &::before {
       right: 0;
-      background-image: url(/images/angles-right-solid.svg);
+      background-image: url(/images/angles-left-solid.svg);
       transform: translateY(-50%);
     }
   }
@@ -40,7 +40,7 @@
   &.right {
     &::before {
       left: 0;
-      background-image: url(/images/angles-left-solid.svg);
+      background-image: url(/images/angles-right-solid.svg);
       transform: translateY(-50%);
     }
   }

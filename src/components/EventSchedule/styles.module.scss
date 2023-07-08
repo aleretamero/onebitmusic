@@ -52,6 +52,10 @@
     font-weight: 700;
     opacity: 0.2;
     transition: 0.3s;
+
+    @media (max-width: 25rem) {
+      font-size: 0.9rem;
+    }
   }
 
   &.active {
