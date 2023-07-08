@@ -24,7 +24,7 @@
   position: relative;
 
   & img {
-    object-fit: contain;
+    transition: 0.3s;
   }
 
   &::before {
@@ -105,13 +105,9 @@
     width: 100%;
   }
   .row {
-    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
     width: 100%;
-
-    &:last-child {
-      flex-direction: column;
-    }
   }
 
   .content1 {
@@ -136,32 +132,16 @@
   }
 }
 
-@media (max-width: 30rem) {
-  .content1 {
-    transform: translateX(0);
-    &::before {
-      transform: translate(1rem);
-    }
+@media (max-width: 35rem) {
+  .row {
+    flex-direction: column;
+    align-items: flex-end;
   }
-
   .content2 {
-    &::before {
-      transform: translate(-1rem);
-    }
+    align-self: flex-start;
   }
-
-  .content3 {
-    &::before {
-      transform: translate(1rem);
-    }
-  }
-
   .content4 {
-    transform: translateX(0);
-
-    &::before {
-      transform: translate(-1rem);
-    }
+    align-self: flex-start;
   }
 }
 

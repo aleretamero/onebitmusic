@@ -9,8 +9,11 @@ import singer4 from '../../../public/images/singers/Img-4.png';
 
 import { Button } from '../Button';
 import { Title } from '../Title';
+import { useMedia } from '@/hooks/useMedia';
 
 export const Singers = () => {
+  const media = useMedia('(max-width: 49.375rem)');
+
   return (
     <section className={`${styles.container} limitedSection`} id="singers">
       <div className={styles.content} data-aos="fade-up-right">
@@ -41,9 +44,10 @@ export const Singers = () => {
             <Image
               src={singer1}
               alt="singer"
-              width={370}
-              height={270}
+              width={media ? 270 : 370}
+              height={media ? 300 : 270}
               quality={100}
+              style={{ objectFit: 'cover', borderRadius: '1.5rem' }}
             />
           </div>
           <div
@@ -56,6 +60,7 @@ export const Singers = () => {
               width={270}
               height={300}
               quality={100}
+              style={{ objectFit: 'cover', borderRadius: '1.5rem' }}
             />
           </div>
         </div>
@@ -70,6 +75,7 @@ export const Singers = () => {
               width={270}
               height={300}
               quality={100}
+              style={{ objectFit: 'cover', borderRadius: '1.5rem' }}
             />
           </div>
           <div
@@ -79,9 +85,10 @@ export const Singers = () => {
             <Image
               src={singer4}
               alt="singer"
-              width={370}
-              height={270}
+              width={media ? 270 : 370}
+              height={media ? 300 : 270}
               quality={100}
+              style={{ objectFit: 'cover', borderRadius: '1.5rem' }}
             />
           </div>
         </div>
