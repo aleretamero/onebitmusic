@@ -14,8 +14,11 @@ export const About = () => {
   const [imageBlur, setImageBlur] = useState('image2');
 
   return (
-    <section className={`${styles.container} limitedSection`}>
-      <div className={styles.containerImages} data-aos="fade-down-right">
+    <section
+      className={`${styles.container} limitedSection`}
+      data-aos="fade-down-right"
+    >
+      <div className={styles.containerImages}>
         <Image
           src={imageAbout1}
           alt="ImageShows"
