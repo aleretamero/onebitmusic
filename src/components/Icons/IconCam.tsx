@@ -1,4 +1,6 @@
-export const IconCam = ({ ...props }) => {
+import { ComponentPropsWithRef } from 'react';
+
+export const IconCam = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       width="22"

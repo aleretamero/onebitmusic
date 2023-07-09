@@ -1,4 +1,6 @@
-export const IconEnvelope = ({ ...props }) => {
+import { ComponentPropsWithRef } from 'react';
+
+export const IconEnvelope = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       {...props}

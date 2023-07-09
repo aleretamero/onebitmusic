@@ -1,4 +1,6 @@
-export const IconHeart = ({ ...props }) => {
+import { ComponentPropsWithRef } from 'react';
+
+export const IconHeart = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       {...props}
@@ -14,7 +16,7 @@ export const IconHeart = ({ ...props }) => {
   );
 };
 
-export const IconLikedHeart = ({ ...props }) => {
+export const IconLikedHeart = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       {...props}

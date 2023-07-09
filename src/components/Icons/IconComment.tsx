@@ -1,4 +1,6 @@
-export const IconComment = ({ ...props }) => {
+import { ComponentPropsWithRef } from 'react';
+
+export const IconComment = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       {...props}

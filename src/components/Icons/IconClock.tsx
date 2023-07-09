@@ -1,4 +1,6 @@
-export const IconClock = ({ ...props }) => {
+import { ComponentPropsWithRef } from 'react';
+
+export const IconClock = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       width="20"

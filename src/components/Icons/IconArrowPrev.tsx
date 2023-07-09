@@ -1,4 +1,6 @@
-export const IconArrowPrev = ({ ...props }) => {
+import { ComponentPropsWithRef } from 'react';
+
+export const IconArrowPrev = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       {...props}

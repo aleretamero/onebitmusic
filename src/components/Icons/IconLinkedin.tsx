@@ -1,4 +1,6 @@
-export const IconLinkedin = ({ ...props }) => {
+import { ComponentPropsWithRef } from "react";
+
+export const IconLinkedin = ({ ...props }: ComponentPropsWithRef<'svg'>) => {
   return (
     <svg
       {...props}
