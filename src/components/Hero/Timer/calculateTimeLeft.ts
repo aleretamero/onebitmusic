@@ -19,6 +19,7 @@ export const calculateTimeLeft = () => {
       { type: 'minutes', value: Math.floor((difference / 1000 / 60) % 60) },
       { type: 'seconds', value: Math.floor((difference / 1000) % 60) },
     ];
+    
     return timer;
   }
 
