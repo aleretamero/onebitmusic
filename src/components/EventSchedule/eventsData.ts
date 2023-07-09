@@ -84,7 +84,7 @@ export const events: TypeEvents = {
           booth: '3F15',
         },
         {
-          image: '',
+          image: '/images/artists/Avatar-7.png',
           name: 'Undefined',
           booth: '3F15',
         },
