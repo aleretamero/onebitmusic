@@ -24,6 +24,8 @@ export const Sponsors = () => {
               alt={item.name}
               width={item.width}
               height={item.height}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
             />
           </div>
         ))}

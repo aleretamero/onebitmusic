@@ -48,6 +48,8 @@ export const Singers = () => {
                   height={media ? singer.heightPrimary : singer.heightSecundary}
                   quality={100}
                   style={{ objectFit: 'cover', borderRadius: '1.5rem' }}
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
                 />
               </div>
             ))}

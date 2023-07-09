@@ -14,13 +14,17 @@ export const Logo = () => {
         width={137}
         height={19.13}
         priority
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
       />
-      <Image 
-        src={logo} 
-        alt="logo" 
-        width={16.455} 
-        height={20.188} 
-        priority       
+      <Image
+        src={logo}
+        alt="logo"
+        width={16.455}
+        height={20.188}
+        priority
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
       />
     </div>
   );

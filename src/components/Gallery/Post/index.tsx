@@ -61,6 +61,8 @@ export const Post = ({
         quality={100}
         style={{ objectFit: 'cover' }}
         draggable={false}
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
       />
       <div className={styles.ratings}>
         <div

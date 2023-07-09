@@ -28,6 +28,8 @@ export const About = () => {
             width={460}
             height={480}
             quality={100}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
           />
         </div>
         <div
@@ -42,14 +44,14 @@ export const About = () => {
             width={460}
             height={480}
             quality={100}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP85uxRDwAFugICHUWwcwAAAABJRU5ErkJggg=="
           />
         </div>
       </div>
 
       <div className={styles.content} data-aos="fade-down-left">
-        <Title style={{ textAlign: 'start' }} >
-          Sobre a gente
-        </Title>
+        <Title style={{ textAlign: 'start' }}>Sobre a gente</Title>
         <p>
           Na onebitmusic, estamos redefinindo a maneira como experimentamos e
           nos envolvemos com a música, utilizando tecnologia de realidade
@@ -57,7 +59,7 @@ export const About = () => {
           limites físicos e levam você a novos patamares de entretenimento
           musical.
         </p>
-        <Button color="light" arrow={true} >
+        <Button color="light" arrow={true}>
           Ler mais
         </Button>
       </div>
