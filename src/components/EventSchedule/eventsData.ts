@@ -86,7 +86,7 @@ export const events: TypeEvents = {
         {
           image: '/images/artists/Avatar-15.png',
           name: 'Undefined',
-          booth: '3F15',
+          booth: '3F16',
         },
       ],
       status: 'coming-soon',
@@ -155,7 +155,7 @@ export const events: TypeEvents = {
         {
           image: '/images/artists/Avatar-13.jpeg',
           name: 'Error',
-          booth: '7E10',
+          booth: '7E11',
         },
       ],
       status: 'coming-soon',
