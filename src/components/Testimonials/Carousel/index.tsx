@@ -1,9 +1,10 @@
-import { Report } from '../Report';
 import styles from './styles.module.scss';
 
 import { useEffect, useState } from 'react';
 
+import { Report } from '../Report';
 import { reportsData, TypeReport } from '../reportsData';
+import { motion, useMotionValue, useTransform } from 'framer-motion';
 
 export const Carousel = () => {
   const [reports, setReports] = useState<TypeReport[]>(reportsData);
@@ -28,15 +29,38 @@ export const Carousel = () => {
     }
   };
 
+  const x = useMotionValue(0);
+  const isLeft = useTransform(x, (value) => value < 0);
+  const isRight = useTransform(x, (value) => value > 0);
+
+  const handleDragEnd = () => {
+    if (isLeft.get()) {
+      handleReports(2);
+    }
+
+    if (isRight.get()) {
+      handleReports(0);
+    }
+  };
+
   return (
     <div className={styles.carousel}>
       {currentReports.map((item, index) => (
-        <div
+        <motion.div
           key={item.profileName}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          style={{ x, cursor: 'grab' }}
+          whileTap={{ cursor: 'grabbing' }}
+          onDragEnd={handleDragEnd}
           className={index !== 1 ? styles.sideReport : styles.emphasisReport}
         >
-          <Report report={item} onClick={() => handleReports(index)} index={index} />
-        </div>
+          <Report
+            report={item}
+            onClick={() => handleReports(index)}
+            index={index}
+          />
+        </motion.div>
       ))}
     </div>
   );

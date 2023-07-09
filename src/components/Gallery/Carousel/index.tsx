@@ -84,6 +84,8 @@ export const Carousel = () => {
           onClick={handleChangeLike}
           active={activePosts?.includes(index)}
           setActivePost={() => handleActivePost(index)}
+          handlePrevPost={handlePrevPost}
+          handleNextPost={handleNextPost}
         />
       ))}
     </div>

@@ -2,6 +2,8 @@ import styles from './styles.module.scss';
 
 import Image from 'next/image';
 
+import { motion, useMotionValue, useTransform } from 'framer-motion';
+
 import { IconHeart, IconLikedHeart } from '@/components/Icons/IconHeart';
 import { IconComment } from '@/components/Icons/IconComment';
 
@@ -11,16 +13,44 @@ interface PostProps {
   post: TypePost;
   active?: boolean;
   onClick: (title: string) => void;
+  handlePrevPost: () => void;
+  handleNextPost: () => void;
   setActivePost?: () => void;
 }
 
-export const Post = ({ post, active, onClick, setActivePost }: PostProps) => {
+export const Post = ({
+  post,
+  active,
+  onClick,
+  setActivePost,
+  handleNextPost,
+  handlePrevPost,
+}: PostProps) => {
+  const x = useMotionValue(0);
+  const isLeft = useTransform(x, (value) => value < 0);
+  const isRight = useTransform(x, (value) => value > 0);
+
+  const handleDragEnd = () => {
+    if (isLeft.get()) {
+      handleNextPost();
+    }
+
+    if (isRight.get()) {
+      handlePrevPost();
+    }
+  };
+
   return (
-    <div
+    <motion.div
       className={`${styles.container} ${
         active ? styles.active : styles.inactive
       }`}
       onClick={setActivePost}
+      drag="x"
+      dragConstraints={{ left: 0, right: 0 }}
+      style={{ x, cursor: 'grab' }}
+      whileTap={{ cursor: 'grabbing' }}
+      onDragEnd={handleDragEnd}
     >
       <Image
         src={post.src}
@@ -28,7 +58,8 @@ export const Post = ({ post, active, onClick, setActivePost }: PostProps) => {
         width={370}
         height={370}
         quality={100}
-        style={{objectFit: 'cover'}}
+        style={{ objectFit: 'cover' }}
+        draggable={false}
       />
       <div className={styles.ratings}>
         <div className={styles.likes}>
@@ -52,6 +83,6 @@ export const Post = ({ post, active, onClick, setActivePost }: PostProps) => {
       </div>
       <h3>{post.title}</h3>
       <p>{post.description}</p>
-    </div>
+    </motion.div>
   );
 };
