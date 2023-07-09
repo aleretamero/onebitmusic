@@ -7,7 +7,7 @@ import { plans } from './plansData';
 export const Pricing = () => {
   return (
     <section className={`${styles.container} limitedSection`} id="pricing">
-      <Title data-aos="fade-up">Escolha o tipo de ingresso</Title>
+      <Title>Escolha o tipo de ingresso</Title>
       <div className={styles.cards}>
         {plans.map((plan, index) => (
           <div

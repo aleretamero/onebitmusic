@@ -94,7 +94,7 @@ export const events: TypeEvents = {
     {
       time: '3:00 PM to 4:00 PM',
       description:
-        '"Spaceship Destroyer e 404 Not Found" - A dupla mais explosiva da galáxia musical! Spaceship Destroyer, o guitarrista intergaláctico com solos destruidores, se une a 404 Not Found, o baterista perdido em seu próprio ritmo cósmico.',
+        '"Spaceship e 404 Not Found" - A dupla mais explosiva da galáxia musical! Spaceship, o guitarrista intergaláctico com solos destruidores, se une a 404 Not Found, o baterista perdido em seu próprio ritmo cósmico.',
       artists: [
         {
           image: '/images/artists/Avatar-7.png',
@@ -103,7 +103,7 @@ export const events: TypeEvents = {
         },
         {
           image: '/images/artists/Avatar-8.jpeg',
-          name: 'Spaceship Destroyer',
+          name: 'Spaceship',
           booth: '9FEC',
         },
       ],
@@ -136,7 +136,7 @@ export const events: TypeEvents = {
       artists: [
         {
           image: '/images/artists/Avatar-11.jpeg',
-          name: 'Cyberwave Coders',
+          name: 'Cyberwave',
           booth: '6F09',
         },
       ],

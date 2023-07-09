@@ -1,5 +1,5 @@
 .container {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -14,4 +14,5 @@
   .name.online {
     color: var(--red-600);
   }
+
 }

@@ -17,7 +17,7 @@ export const Singers = () => {
   return (
     <section className={`${styles.container} limitedSection`} id="singers">
       <div className={styles.content} data-aos="fade-up-right">
-        <Title style={{ textAlign: 'start' }} data-aos="fade-up-right">
+        <Title style={{ textAlign: 'start' }}>
           Artistas
         </Title>
         <p>
@@ -31,7 +31,7 @@ export const Singers = () => {
           evento. Os artistas da OneBitMusic estão prontos para levar você a uma
           jornada musical única e inesquecível.
         </p>
-        <Button color="light" arrow={true} data-aos="fade-up-right">
+        <Button color="light" arrow={true}>
           Veja a lista completa
         </Button>
       </div>

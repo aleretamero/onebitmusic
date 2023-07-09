@@ -8,7 +8,7 @@ import { sponsors } from './sponsorsData';
 export const Sponsors = () => {
   return (
     <section className={`${styles.container} limitedSection`}>
-      <Title data-aos="fade-up">Nossos investidores</Title>
+      <Title>Nossos investidores</Title>
 
       <div className={styles.content}>
         {sponsors.map((item, index) => (
@@ -27,7 +27,7 @@ export const Sponsors = () => {
         ))}
       </div>
 
-      <Button color="light" data-aos="fade-up">
+      <Button color="light">
         Se torne um Investidor
       </Button>
     </section>

@@ -47,7 +47,7 @@ export const About = () => {
       </div>
 
       <div className={styles.content} data-aos="fade-down-left">
-        <Title style={{ textAlign: 'start' }} data-aos="fade-down-left">
+        <Title style={{ textAlign: 'start' }} >
           Sobre a gente
         </Title>
         <p>
@@ -57,7 +57,7 @@ export const About = () => {
           limites físicos e levam você a novos patamares de entretenimento
           musical.
         </p>
-        <Button color="light" arrow={true} data-aos="fade-down-left">
+        <Button color="light" arrow={true} >
           Ler mais
         </Button>
       </div>

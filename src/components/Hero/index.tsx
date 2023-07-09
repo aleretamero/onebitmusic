@@ -11,8 +11,8 @@ export const Hero = () => {
   return (
     <section className={`${styles.container} limitedSection`} id="hero">
       <div className={styles.content}>
-        <strong data-aos="zoom-in">A sua melhor Experiencia </strong>
-        <h1 data-aos="zoom-in">Musical Digital</h1>
+        <strong>A sua melhor Experiencia </strong>
+        <h1>Musical Digital</h1>
         <p>
           Prepare-se para uma experiência incrível e envolvente, onde a arte se
           une à performance para criar momentos inesquecíveis. Nossos shows

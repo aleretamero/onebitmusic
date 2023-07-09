@@ -74,7 +74,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className={styles.carousel} data-aos="zoom-in">
+    <div className={styles.carousel}>
       <IconArrowPrev className={styles.prev} onClick={handlePrevPost} />
       <IconArrowNext className={styles.next} onClick={handleNextPost} />
       {posts.map((post, index) => (

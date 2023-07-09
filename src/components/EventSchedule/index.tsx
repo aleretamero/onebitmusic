@@ -20,11 +20,11 @@ export const EventSchedule = () => {
       className={`${styles.container} limitedSection`}
       id="event-schedule"
     >
-      <Title style={{ textAlign: 'start' }} data-aos="fade-up">
+      <Title style={{ textAlign: 'start' }}>
         Nossa Programação
       </Title>
 
-      <ul className={styles.listDays} data-aos="fade-up">
+      <ul className={styles.listDays}>
         <li
           className={`${styles.day} ${
             activeDay === 'day1' ? styles.active : ''
@@ -54,7 +54,7 @@ export const EventSchedule = () => {
         </li>
       </ul>
 
-      <table className={styles.containerEventSchedule} data-aos="fade-up">
+      <table className={styles.containerEventSchedule}>
         <thead>
           <tr>
             <th>Hora</th>
