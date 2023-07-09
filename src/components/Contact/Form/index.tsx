@@ -16,6 +16,12 @@ export const Form = () => {
   const email = useForm('email');
   const message = useForm('message');
 
+  const fields = [
+    { name: 'name', label: 'Nome', component: name },
+    { name: 'email', label: 'Email', component: email },
+    { name: 'message', label: 'Mensagem', component: message },
+  ];
+
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
 
@@ -39,33 +45,18 @@ export const Form = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
-      <Input
-        label="Nome"
-        type="text"
-        name="name"
-        value={name.value}
-        error={name.error}
-        onChange={name.onChange}
-        onBlur={name.onBlur}
-      />
-      <Input
-        label="Email"
-        type="text"
-        name="email"
-        value={email.value}
-        error={email.error}
-        onChange={email.onChange}
-        onBlur={email.onBlur}
-      />
-      <Input
-        label="Mensagem"
-        type="text"
-        name="message"
-        value={message.value}
-        error={message.error}
-        onChange={message.onChange}
-        onBlur={message.onBlur}
-      />
+      {fields.map((field) => (
+        <Input
+          key={field.name}
+          label={field.label}
+          type="text"
+          name={field.name}
+          value={field.component.value}
+          error={field.component.error}
+          onChange={field.component.onChange}
+          onBlur={field.component.onBlur}
+        />
+      ))}
       {loading ? (
         <Button disabled={true} color="red">
           Enviando...

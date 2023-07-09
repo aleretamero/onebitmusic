@@ -17,7 +17,7 @@ import { Meta } from '@/components/Meta';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '700', '900'],
   variable: '--montserrat',
 });
 const raleway = Raleway({

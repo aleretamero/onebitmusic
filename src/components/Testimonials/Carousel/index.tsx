@@ -49,6 +49,7 @@ export const Carousel = () => {
         <motion.div
           key={item.profileName}
           drag="x"
+          dragElastic={0.05}
           dragConstraints={{ left: 0, right: 0 }}
           style={{ x, cursor: 'grab' }}
           whileTap={{ cursor: 'grabbing' }}

@@ -63,17 +63,14 @@ export const Post = ({
         draggable={false}
       />
       <div className={styles.ratings}>
-        <div className={styles.likes}>
+        <div
+          className={styles.likes}
+          onClick={active ? () => onClick(post.title) : undefined}
+        >
           {post.isLiked ? (
-            <IconLikedHeart
-              onClick={active ? () => onClick(post.title) : undefined}
-              className={`${styles.iconLike} ${styles.liked}`}
-            />
+            <IconLikedHeart className={`${styles.iconLike} ${styles.liked}`} />
           ) : (
-            <IconHeart
-              onClick={active ? () => onClick(post.title) : undefined}
-              className={styles.iconLike}
-            />
+            <IconHeart className={styles.iconLike} />
           )}
           <span>{post.isLiked ? post.likes + 1 : post.likes}</span>
         </div>

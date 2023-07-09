@@ -1,33 +1,8 @@
 import styles from './styles.module.scss';
+
 import { useEffect, useState } from 'react';
 
-type TypeTimeLeft = {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-};
-
-const calculateTimeLeft = () => {
-  const difference =
-    Number(new Date('2023-07-11T23:59:00')) - Number(new Date());
-
-  if (difference > 0) {
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  }
-
-  return {
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  };
-};
+import { calculateTimeLeft, TypeTimeLeft } from './calculateTimeLeft';
 
 export const Timer = () => {
   const [timeLeft, setTimeLeft] = useState<TypeTimeLeft | null>(null);
@@ -42,10 +17,16 @@ export const Timer = () => {
 
   return (
     <div className={`${styles.timer} ${timeLeft ? '' : styles.hidden}`}>
-      <span>{timeLeft && timeLeft.days}d</span>
-      <span>{timeLeft && timeLeft.hours}h</span>
-      <span>{timeLeft && timeLeft.minutes}m</span>
-      <span>{timeLeft && timeLeft.seconds}s</span>
+      {timeLeft ? (
+        timeLeft.map((item) => (
+          <span key={item.type}>
+            {item.value}
+            {item.type[0]}
+          </span>
+        ))
+      ) : (
+        <span style={{ visibility: 'hidden' }}>skeleton</span>
+      )}
     </div>
   );
 };

@@ -21,7 +21,8 @@
     user-select: none;
   }
 
-  & h4 {
+  & h4,
+  & p {
     width: 23.125rem;
     color: var(--gray-200);
     font-family: var(--raleway);
@@ -29,10 +30,6 @@
   }
 
   & p {
-    width: 23.125rem;
-    color: var(--gray-200);
-    font-family: var(--raleway);
-    line-height: 1.5rem;
     opacity: 0.5;
   }
 }
@@ -43,7 +40,7 @@
   align-items: center;
 }
 
-.iconLike {
+.likes {
   cursor: pointer;
   transition: 0.3s;
 }

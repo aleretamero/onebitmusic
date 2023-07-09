@@ -1,10 +1,13 @@
 import styles from './styles.module.scss';
+
 import { Title } from '../Title';
 import { Artist } from './Artist';
 import { Status } from './Status';
 import { useState } from 'react';
 
 import { events } from './eventsData';
+
+import { listDays } from './listDaysData';
 
 export const EventSchedule = () => {
   const [days, setDays] = useState(events.day1);
@@ -20,38 +23,21 @@ export const EventSchedule = () => {
       className={`${styles.container} limitedSection`}
       id="event-schedule"
     >
-      <Title style={{ textAlign: 'start' }}>
-        Nossa Programação
-      </Title>
+      <Title style={{ textAlign: 'start' }}>Nossa Programação</Title>
 
       <ul className={styles.listDays}>
-        <li
-          className={`${styles.day} ${
-            activeDay === 'day1' ? styles.active : ''
-          }`}
-          onClick={() => handleClick('day1')}
-        >
-          <strong>Dia 1</strong>
-          <span>23 Setembro</span>
-        </li>
-        <li
-          className={`${styles.day} ${
-            activeDay === 'day2' ? styles.active : ''
-          }`}
-          onClick={() => handleClick('day2')}
-        >
-          <strong>Dia 2</strong>
-          <span>24 Setembro</span>
-        </li>
-        <li
-          className={`${styles.day} ${
-            activeDay === 'day3' ? styles.active : ''
-          }`}
-          onClick={() => handleClick('day3')}
-        >
-          <strong>Dia 3</strong>
-          <span>25 Setembro</span>
-        </li>
+        {listDays.map((day) => (
+          <li
+            key={day.id}
+            className={`${styles.day} ${
+              activeDay === day.id ? styles.active : ''
+            }`}
+            onClick={() => handleClick(day.id)}
+          >
+            <strong>{day.label}</strong>
+            <span>{day.labelExtended}</span>
+          </li>
+        ))}
       </ul>
 
       <table className={styles.containerEventSchedule}>

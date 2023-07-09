@@ -1,6 +1,7 @@
+import styles from './styles.module.scss';
+
 import { Title } from '../Title';
 import { Carousel } from './Carousel';
-import styles from './styles.module.scss';
 
 export const Gallery = () => {
   return (

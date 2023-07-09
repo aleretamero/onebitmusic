@@ -1,7 +1,6 @@
 import styles from './styles.module.scss';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { IconPlay } from '../Icons/IconPlay';
 import { Timer } from './Timer';
