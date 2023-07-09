@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import { ComponentPropsWithRef } from 'react';
 
 interface InputProps extends ComponentPropsWithRef<'input'> {
-  label?: string;
+  label: string;
   error?: string | null;
 }
 
