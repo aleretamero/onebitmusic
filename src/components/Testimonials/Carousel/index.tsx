@@ -47,9 +47,10 @@ export const Carousel = () => {
     <div className={styles.carousel}>
       {currentReports.map((item, index) => (
         <motion.div
+          tabIndex={-1}
           key={item.profileName}
           drag="x"
-          dragElastic={.11}
+          dragElastic={0.11}
           dragConstraints={{ left: 0, right: 0 }}
           style={{ x, cursor: 'grab' }}
           whileTap={{ cursor: 'grabbing' }}

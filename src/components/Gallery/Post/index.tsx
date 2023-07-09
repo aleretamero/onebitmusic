@@ -42,6 +42,7 @@ export const Post = ({
 
   return (
     <motion.div
+      tabIndex={-1}
       className={`${styles.container} ${
         active ? styles.active : styles.inactive
       }`}
