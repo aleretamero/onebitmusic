@@ -47,7 +47,7 @@ export const Post = ({
       }`}
       onClick={setActivePost}
       drag="x"
-      dragElastic={0.015}
+      dragElastic={0.02}
       dragConstraints={{ left: 0, right: 0 }}
       style={{ x, cursor: 'grab' }}
       whileTap={{ cursor: 'grabbing' }}

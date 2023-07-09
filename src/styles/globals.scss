@@ -90,3 +90,14 @@ main {
     padding: 0 max(calc((100% - 73.125rem) / 2), 1rem);
   }
 }
+
+.animeLoad {
+  opacity: 0;
+  animation: animeLoad 1s forwards;
+}
+
+@keyframes animeLoad {
+  to {
+    opacity: 1;
+  }
+}

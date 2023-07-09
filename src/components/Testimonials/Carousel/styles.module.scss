@@ -6,7 +6,8 @@
   width: 100%;
   overflow: hidden;
   margin-top: 3.81rem;
-
+  min-height: 30rem;
+  
   @media (max-width: 57.5rem) {
     gap: 1rem;
   }
