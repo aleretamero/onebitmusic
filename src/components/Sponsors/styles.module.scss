@@ -28,20 +28,16 @@
     height: auto !important;
     object-fit: contain;
   }
-}
 
-@media (max-width: 74.5rem) {
-  .content {
+  @media (max-width: 74.5rem) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-}
 
-@media (max-width: 30rem) {
-  .content {
+  @media (max-width: 30rem) {
     gap: 3rem;
     & div {
       width: 8.5rem;

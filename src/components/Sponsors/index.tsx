@@ -1,7 +1,9 @@
+import styles from './styles.module.scss';
+
+import Image from 'next/image';
+
 import { Button } from '../Button';
 import { Title } from '../Title';
-import styles from './styles.module.scss';
-import Image from 'next/image';
 
 import { sponsors } from './sponsorsData';
 
@@ -27,9 +29,7 @@ export const Sponsors = () => {
         ))}
       </div>
 
-      <Button color="light">
-        Se torne um Investidor
-      </Button>
+      <Button color="light">Se torne um Investidor</Button>
     </section>
   );
 };

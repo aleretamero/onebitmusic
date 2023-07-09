@@ -6,22 +6,18 @@
   width: 100%;
   overflow: hidden;
   margin-top: 3.81rem;
+
+  @media (max-width: 57.5rem) {
+    gap: 1rem;
+  }
 }
 
 .sideReport {
   margin-top: 0.63rem;
   opacity: 0.5;
   user-select: none;
-}
 
-@media (max-width: 57.5rem) {
-  .carousel {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 48rem) {
-  .sideReport {
+  @media (max-width: 48rem) {
     transform: translateY(2rem);
   }
 }

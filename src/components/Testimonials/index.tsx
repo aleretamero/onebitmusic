@@ -1,4 +1,5 @@
 import styles from './styles.module.scss';
+
 import { Title } from '../Title';
 import { Carousel } from './Carousel';
 

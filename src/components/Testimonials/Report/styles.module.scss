@@ -26,16 +26,12 @@
       align-self: flex-end;
     }
   }
-}
 
-@media (max-width: 57.5rem) {
-  .article {
+  @media (max-width: 57.5rem) {
     width: calc(100vw - 9.5rem);
   }
-}
 
-@media (max-width: 48rem) {
-  .article {
+  @media (max-width: 48rem) {
     padding: 1.2rem;
 
     & p {
