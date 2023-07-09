@@ -5,8 +5,9 @@ import Link from 'next/link';
 import { IconPlay } from '../Icons/IconPlay';
 import { Timer } from './Timer';
 import { Button } from '../Button';
+import { TypeTimeLeft } from './Timer/calculateTimeLeft';
 
-export const Hero = () => {
+export const Hero = (props: { initialTime: TypeTimeLeft }) => {
   return (
     <section className={`${styles.container} limitedSection`} id="hero">
       <div className={styles.content}>
@@ -26,7 +27,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <Timer />
+      <Timer initialTime={props.initialTime} />
     </section>
   );
 };

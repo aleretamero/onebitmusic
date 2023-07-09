@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 
 import { calculateTimeLeft, TypeTimeLeft } from './calculateTimeLeft';
 
-export const Timer = () => {
-  const [timeLeft, setTimeLeft] = useState<TypeTimeLeft | null>(null);
+export const Timer = ({ initialTime }: { initialTime: TypeTimeLeft }) => {
+  const [timeLeft, setTimeLeft] = useState<TypeTimeLeft>(initialTime);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -16,17 +16,13 @@ export const Timer = () => {
   }, [timeLeft]);
 
   return (
-    <div className={`${styles.timer} ${timeLeft ? '' : styles.hidden}`}>
-      {timeLeft ? (
-        timeLeft.map((item) => (
-          <span key={item.type}>
-            {item.value}
-            {item.type[0]}
-          </span>
-        ))
-      ) : (
-        <span style={{ visibility: 'hidden' }}>skeleton</span>
-      )}
+    <div className={styles.timer}>
+      {timeLeft.map((item) => (
+        <span key={item.type}>
+          {item.value}
+          {item.type[0]}
+        </span>
+      ))}
     </div>
   );
 };

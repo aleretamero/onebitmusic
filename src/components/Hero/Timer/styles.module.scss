@@ -11,12 +11,6 @@
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
-  transition: 0.5s;
-
-  &.hidden {
-    visibility: hidden;
-    transform: scale(0.9);
-  }
 
   & span {
     opacity: 0.5;

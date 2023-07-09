@@ -14,6 +14,12 @@ import { Gallery } from '../components/Gallery';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import { Meta } from '@/components/Meta';
+import { GetServerSideProps } from 'next';
+
+import {
+  calculateTimeLeft,
+  TypeTimeLeft,
+} from '@/components/Hero/Timer/calculateTimeLeft';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -26,7 +32,17 @@ const raleway = Raleway({
   variable: '--raleway',
 });
 
-export default function Home() {
+export const getServerSideProps: GetServerSideProps = async () => {
+  const initialTime = calculateTimeLeft();
+
+  return {
+    props: {
+      initialTime,
+    },
+  };
+};
+
+export default function Home(props: { initialTime: TypeTimeLeft }) {
   return (
     <>
       <Head>
@@ -46,7 +62,7 @@ export default function Home() {
       <div className={`${montserrat.variable} ${raleway.variable}`}>
         <Header />
         <main className="main">
-          <Hero />
+          <Hero initialTime={props.initialTime} />
           <About />
           <Singers />
           <EventSchedule />
