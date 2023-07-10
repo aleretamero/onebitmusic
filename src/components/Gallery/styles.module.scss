@@ -1,13 +1,38 @@
 .container {
-  margin-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: 1.94rem;
-  background-color: var(--gray-600);
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 82, 82, 0.05) 0%,
+    rgba(252, 82, 82, 0) 100%
+  );
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   gap: 3.75rem;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+
+  & h2 {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      opacity: 0.1;
+      position: absolute;
+      top: -7.76rem;
+      left: 50%;
+      z-index: -10;
+      transform: translateX(-50%);
+      background-image: url('/images/Vector.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 22.44794rem;
+      aspect-ratio: 1;
+    }
+  }
 
   & div:first-child {
     align-self: flex-start;
