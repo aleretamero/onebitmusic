@@ -7,21 +7,21 @@ export const socialMedias = [
   {
     name: 'facebook',
     Image: IconFacebook,
-    href: 'https://www.facebook.com/onebitcode/',
+    href: 'https://www.facebook.com/alexandre.retamero',
   },
   {
     name: 'twitter',
     Image: IconTwitter,
-    href: 'https://twitter.com/onebitcode',
+    href: 'https://twitter.com/aleretamero',
   },
   {
     name: 'linkedin',
     Image: IconLinkedin,
-    href: 'https://br.linkedin.com/school/onebitcode/',
+    href: 'https://www.linkedin.com/in/alexandreretamero/',
   },
   {
     name: 'instagram',
     Image: IconInstagram,
-    href: 'https://www.instagram.com/onebitcode/',
+    href: 'https://www.instagram.com/alexandreretamero/',
   },
 ];
