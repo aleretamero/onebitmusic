@@ -11,13 +11,10 @@ export const calculateTimeLeft = () => {
 
   if (difference > 0) {
     const timer: TypeTimeLeft = [
-      { type: 'day', value: Math.floor(difference / (1000 * 60 * 60 * 24)) },
-      {
-        type: 'hours',
-        value: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      },
-      { type: 'minutes', value: Math.floor((difference / 1000 / 60) % 60) },
-      { type: 'seconds', value: Math.floor((difference / 1000) % 60) },
+      { type: 'day', value: Math.floor(difference / (1000 * 60 * 60 * 24))},
+      { type: 'hours', value: Math.floor((difference / (1000 * 60 * 60)) % 24)},
+      { type: 'minutes', value: Math.floor((difference / 1000 / 60) % 60)},
+      { type: 'seconds', value: Math.floor((difference / 1000) % 60)},
     ];
     
     return timer;
