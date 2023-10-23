@@ -6,17 +6,25 @@ export type TypeTimeLeft = [
 ];
 
 export const calculateTimeLeft = () => {
-  const difference =
-    Number(new Date('2023-07-11T23:59:00')) - Number(new Date());
+  const nextMonth = new Date(
+    new Date().getFullYear(),
+    new Date().getMonth() + 1,
+    1
+  );
+
+  const difference = Number(new Date(+nextMonth - 1)) - Number(new Date());
 
   if (difference > 0) {
     const timer: TypeTimeLeft = [
-      { type: 'day', value: Math.floor(difference / (1000 * 60 * 60 * 24))},
-      { type: 'hours', value: Math.floor((difference / (1000 * 60 * 60)) % 24)},
-      { type: 'minutes', value: Math.floor((difference / 1000 / 60) % 60)},
-      { type: 'seconds', value: Math.floor((difference / 1000) % 60)},
+      { type: 'day', value: Math.floor(difference / (1000 * 60 * 60 * 24)) },
+      {
+        type: 'hours',
+        value: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      },
+      { type: 'minutes', value: Math.floor((difference / 1000 / 60) % 60) },
+      { type: 'seconds', value: Math.floor((difference / 1000) % 60) },
     ];
-    
+
     return timer;
   }
 

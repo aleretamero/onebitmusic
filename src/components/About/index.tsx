@@ -20,7 +20,7 @@ export const About = () => {
           className={`${styles.contentImage1} ${
             imageBlur === 'image1' && styles.imageBlur
           }`}
-          onClick={() => setImageBlur('image2')}
+          onMouseEnter={() => setImageBlur('image2')}
         >
           <Image
             src={imageAbout1}
@@ -36,7 +36,7 @@ export const About = () => {
           className={`${styles.contentImage2} ${
             imageBlur === 'image2' && styles.imageBlur
           }`}
-          onClick={() => setImageBlur('image1')}
+          onMouseEnter={() => setImageBlur('image1')}
         >
           <Image
             src={imageAbout2}
