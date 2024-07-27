@@ -1,4 +1,4 @@
-# Projeto OneBitCode Hackathon - Landing Page
+# Projeto OneBitCode Hackathon - Onebitmusic
 
 ![preview](./public/preview.webp)
 
@@ -16,22 +16,42 @@ Essa Landing Page foi desenvolvida como parte do desafio do Hackathon do curso O
 
  ✔️ **Contador de Contagem Regressiva:** Um contador dinâmico exibe o tempo restante para os próximos shows, criando uma sensação de urgência e mantendo os visitantes informados sobre os próximos eventos.
 
+ EDIT: O contador está marcando o tempo restante para o término do mês.
+
 ## 🖥️ Tecnologias Utilizadas
 
 - [React](https://react.dev) - biblioteca para interfaces de usuário
-- [Next JS](https://nextjs.org) - framework react para aplicações web 
-- [Typescript](https://www.typescriptlang.org) - superset, linguagem baseada em javascript
+- [NextJS](https://nextjs.org) - framework react para aplicações web 
+- [TypeScript](https://www.typescriptlang.org) - superset, linguagem baseada em javascript
 - [Sass](https://sass-lang.com) - pré-processador css
+- [AOS](https://michalsnik.github.io/aos/) - biblioteca para animações de scroll
+- [Framer Motion](https://www.framer.com/motion/) - biblioteca para animações
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction) - biblioteca para notificações toast no React
+
+## 📂 Esquema de pastas
+```
+./src
+├── components
+├── hooks
+├── pages
+└── styles
+```
+
+## 📝 Resumo da Estrutura
+- **components**: Contém os componentes reutilizáveis da aplicação.
+- **hooks**: Armazena os hooks customizados.
+- **pages**: Contém as páginas da aplicação.
+- **styles**: Armazena os estilos globais da aplicação.
 
 ## 🛠️ Modificando o projeto
 
-### Siga as seguintes instruções para instalar e poder modificar o projeto em sua máquina:
+### Siga as seguintes instruções para instalar e poder modificar o projeto em sua máquina
 
 ### 📋 Pré-requisitos:
 
 Para baixar, executar e modificar o projeto, você precisa ter instalado em sua máquina: 
 * [Node](https://nodejs.org/en)
-* Um gerenciador de pacotes, como o [PNPM](https://pnpm.io), [Npm](https://nodejs.org/en/) ou [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+* Um gerenciador de pacotes, como o [Npm](https://www.npmjs.com), [Yarn](https://classic.yarnpkg.com/lang/en/docs/install) ou [PNPM](https://pnpm.io)
 * [Git](https://git-scm.com/downloads)
 * Editor de código ou IDE, como o [VSCode](https://code.visualstudio.com/Download)
   
