@@ -51,7 +51,7 @@ Essa Landing Page foi desenvolvida como parte do desafio do Hackathon do curso O
 
 Para baixar, executar e modificar o projeto, você precisa ter instalado em sua máquina: 
 * [Node](https://nodejs.org/en)
-* Um gerenciador de pacotes, como o [Npm](https://www.npmjs.com), [Yarn](https://classic.yarnpkg.com/lang/en/docs/install) ou [PNPM](https://pnpm.io)
+* Um gerenciador de pacotes, como o [Npm](https://www.npmjs.com)
 * [Git](https://git-scm.com/downloads)
 * Editor de código ou IDE, como o [VSCode](https://code.visualstudio.com/Download)
   
@@ -70,19 +70,11 @@ cd onebitmusic
 3. Instale as dependências
 ```bash
 npm install
-# ou
-pnpm install
-# ou
-yarn install
 ```
 
 4. Inicie o servidor de desenvolvimento do projeto
 ```bash
 npm run dev
-# ou
-pnpm dev 
-# ou
-yarn dev
 ```
 
 Obs: o servidor iniciará na porta 3000 - acesse por: <http://localhost:3000/>
